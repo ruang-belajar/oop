@@ -36,7 +36,7 @@ Secara umum, ada 4 paradigma pemrograman, yaitu: Imperatif/Procedural, Object Or
 
   Contoh bahasa pemrograman yang menggunakan paradigma fungsional adalah _LOGO, APL, LISP, Scheme, Haskell, ..._
 
-* Declarative/Logic/Predicative:
+* **Declarative/Logic/Predicative:**
   Paradigma ini didasari atas pendefinisian relasi antar individu yang dinyatakan sebagai predikat. Sebuah program lojik adalah kumpulan aksioma (Fakta dan aturan deduksi.
 
   Dalam paradigma ini, programmer menguraikan sekumpulan fakta dan aturan-aturan (_inference rules_). Ketika program dieksekusi, pemakai akan mengajukan pertanyaan, selanjutnya program akan menggunakan aturan deduksi dan mencocokkan pertanyaan dengan fakta-fakta yang ada untuk menjawab pertanyaan.

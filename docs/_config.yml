@@ -1,0 +1,10 @@
+title: Ruang Belajar - Object Oriented Programming
+description: Repositori pembelajaran mata kuliah Pemrograman Berorientasi Objek
+domain: pujangga123.github.io
+url: http://pujangga123.github.io
+github_username:  pujangga123
+
+remote_theme: pages-themes/minimal
+plugins:
+- jekyll-remote-theme
+- jekyll-feed
