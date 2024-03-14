@@ -1,4 +1,4 @@
-# Ruang Belajar OOP
+# Pendahuluan
 
 ## Sekilas tentang Paradigma Pemrograman
 
