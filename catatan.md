@@ -2,14 +2,12 @@
 
 ## Pertemuan 1
 - [PPTX](pptx/pbo-pertemuan-1.pptx)
-- Pendahuluan
+- [Pendahuluan](01-pendahuluan.md)
   - Paradigma pemrograman (umum):
     - Imperative, Object Oriented, Functional, Logical
   - Pengertian OOP
   - Terminologi: class, object, sttribute/property, method/function, parameter
-  - Coba Scratch:
-    - https://scratch.mit.edu/
-    - https://scratch.mit.edu/projects/985625672
+  - Check [Latihan 1](latihan/latihan-01.md)
 
 - Persiapan program:
   - MS Excel (VBA)
@@ -32,6 +30,8 @@
 - Menuangkan UML ke dalam program Java
 - Aturan penamaan (Naming convention)
 
-## Pertemuan 3
+
+
+## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
 - 
