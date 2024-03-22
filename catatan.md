@@ -11,14 +11,12 @@
 
 - Persiapan program:
   - MS Excel (VBA)
-  - MS Access (VBA)
   - Python + Visual Studio Code
   - XAMPP (Apache + PHP)
   - Scratch (online/desktop)
   - StarUML
   - Netbeans
   - Godot
-  - Warcraft 3 + World Editor
 
 ## Pertemuan 2
 - Review:
@@ -29,8 +27,6 @@
 - Notasi UML
 - Menuangkan UML ke dalam program Java
 - Aturan penamaan (Naming convention)
-
-
 
 ## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
