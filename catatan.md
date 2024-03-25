@@ -19,11 +19,16 @@
   - Godot
 
 ## Pertemuan 2
-- Review:
+- Setup StarUML: https://staruml.io/download/
+  - Setup _Extension Manager_, install extension _Java_
+- Buat akun Github + Github Desktop
+- Join classroom: https://classroom.github.com/classrooms/114467801-2024-oop-folder
+- Review, contoh dari Scratch:
   - Apa itu _Class_?
   - Apa itu _Object_?
   - Apa itu _Method_?
   - Apa itu _Property/Attribute_?
+- Class Diagram
 - Notasi UML
 - Menuangkan UML ke dalam program Java
 - Aturan penamaan (Naming convention)
