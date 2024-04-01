@@ -24,14 +24,20 @@
 - Buat akun Github + Github Desktop
 - Join classroom: https://classroom.github.com/classrooms/114467801-2024-oop-folder
 - Review, contoh dari Scratch:
-  - Apa itu _Class_?
-  - Apa itu _Object_?
-  - Apa itu _Method_?
-  - Apa itu _Property/Attribute_?
+  - Apa itu _Class_? cetakan (kue)
+  - Apa itu _Object_? hasil cetakan (kue)
+  - Apa itu _Method_? perintahnya/kue nya bisa diapakan.
+  - Apa itu _Property/Attribute_? berat/ukuran/bahan.
 - Class Diagram
-- Notasi UML
+- UML: bahasa/diagram yang dipakai untuk mengkomunikasikan design OOP
+
+## Pertemuan 3
 - Menuangkan UML ke dalam program Java
-- Aturan penamaan (Naming convention)
+- Aturan penamaan (Naming convention):
+  - variable, object, parameter, method, property: camelCase
+  - class: PascalCase
+  - constant: UPPERCASE
+
 
 ## Pertemuan X
 - Setup StarUML
@@ -63,4 +69,3 @@
       - _set y to ..._
       - _point in direction_
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
-- 
