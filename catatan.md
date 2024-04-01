@@ -34,5 +34,33 @@
 - Aturan penamaan (Naming convention)
 
 ## Pertemuan X
+- Setup StarUML
+  - Install extension Java (via Extension Manager)
+  - Set: Tools - Java - Configure
+    - JavaDoc: `off`
+- Simulasi membuat class dari Scratch:
+  - Class: Sprite
+    - Property:
+      - x: Integer
+      - y: Integer
+      - direction: Integer
+      - show: bool
+      - size: Integer
+      - name: String
+    - Method:
+      - move(steps: Integer)
+      - turn(degress: Integer)
+      - glide(secs: Integer, x:Integer, y:Integer)
+      - say(text: String, duration: Integer)
+      - think(text: String)
+      - changeSizeBy(size: Integer)
+      - setSizeTo(percent: Integer)
+      - show()
+      - hide()
+    - Tambahkan 2 method dari:
+      - _stop all sounds_
+      - _change volume by ..._
+      - _set y to ..._
+      - _point in direction_
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
 - 
