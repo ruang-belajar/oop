@@ -28,22 +28,19 @@
   - Apa itu _Object_? hasil cetakan (kue)
   - Apa itu _Method_? perintahnya/kue nya bisa diapakan.
   - Apa itu _Property/Attribute_? berat/ukuran/bahan.
+- Setup StarUML
+  - Install extension Java (via Extension Manager)
+  - Set: Tools - Java - Configure
+    - JavaDoc: `off`
 - Class Diagram
 - UML: bahasa/diagram yang dipakai untuk mengkomunikasikan design OOP
-
-## Pertemuan 3
-- Menuangkan UML ke dalam program Java
+- Konversi UML ke dalam program Java
 - Aturan penamaan (Naming convention):
   - variable, object, parameter, method, property: camelCase
   - class: PascalCase
   - constant: UPPERCASE
 
-
-## Pertemuan X
-- Setup StarUML
-  - Install extension Java (via Extension Manager)
-  - Set: Tools - Java - Configure
-    - JavaDoc: `off`
+## Pertemuan 3
 - Simulasi membuat class dari Scratch:
   - Class: Sprite
     - Property:
@@ -68,4 +65,27 @@
       - _change volume by ..._
       - _set y to ..._
       - _point in direction_
+  - Export UML ke Java
+  - Buat project baru di Netbeans
+  - Tambahkan file class Java ke project
+  - Lengkapi method dengan perintah sederhana (`System.out.println()`)
+  - Buat program sederhana menggunakan class yang dibuat.
+- Contoh kasus: class diagram untuk sistem informasi kampus.
+  - Class: `Mahasiswa`
+    - property:
+      - `nim: String`
+      - `nama: String`
+      - `jurusan: String`
+      - `angkatan: String`
+      - `lahirTanggal: Date`
+      - `lahirTempat: String`
+      - `ipk: Float`
+    - method:
+      - _constructor_
+      - `simpan()`
+      - `tambah()`
+      - `hapus(nim)`
+      - `rekalkulasiIpk()`
+
+## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
