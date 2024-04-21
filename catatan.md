@@ -82,10 +82,14 @@
       - `ipk: Float`
     - method:
       - _constructor_
+      - `baca()`
       - `simpan()`
       - `tambah()`
-      - `hapus(nim)`
+      - `hapus()`
       - `rekalkulasiIpk()`
+
+## Pertemuan 4
+- Tambahkan code untuk menyimpan data ke class `Mahasiswa`
 
 ## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
