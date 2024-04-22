@@ -90,6 +90,26 @@
 
 ## Pertemuan 4
 - Tambahkan code untuk menyimpan data ke class `Mahasiswa`
+- Design class:
+  - `jurusan`
+    - property:
+      - `kode`: _VARCHAR(10)_
+      - `nama`: _VARCHAR(30)_
+    - method:
+      - `baca()`
+      - `hapus()`
+      - `simpan()`
+      - `tambah()`
+  - `dosen`
+    - property:
+      - `nid`: _VARCHAR(10)_
+      - `nama`: _VARCHAR(30)_
+      - `lahirTgl`: _Date_
+    - method:
+      - `baca()`
+      - `hapus()`
+      - `simpan()`
+      - `tambah()`
 
 ## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
