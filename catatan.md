@@ -73,13 +73,13 @@
 - Contoh kasus: class diagram untuk sistem informasi kampus.
   - Class: `Mahasiswa`
     - property:
-      - `nim: String`
-      - `nama: String`
-      - `jurusan: String`
-      - `angkatan: String`
-      - `lahirTanggal: Date`
-      - `lahirTempat: String`
-      - `ipk: Float`
+      - `nim:` _String_
+      - `nama:` _String_
+      - `jurusan:` _String_
+      - `angkatan:` _String_
+      - `lahirTanggal:` _Date_
+      - `lahirTempat:` _String_
+      - `ipk:` _Double_
     - method:
       - _constructor_
       - `baca()`
