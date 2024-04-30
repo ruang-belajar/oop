@@ -111,5 +111,28 @@
       - `simpan()`
       - `tambah()`
 
+## Pertemuan 5
+- Contoh kasus:
+  - Sebuah perguruan tinggi akan membuat Sistem Informasi Kampus yang akan menangani pencatatan nilai mahasiswa. Proses yang akan ditangani SI ini:
+    - tambah, update data mahasiswa
+    - tambah, update data mata kuliah
+    - tambah, update data dosen/admin
+    - tambah, update data kelas
+    - tambah, update data peserta kelas
+    - Mahasiswa bisa login untuk melihat nilai
+    - Dosen bisa input nilai
+    - Admin bisa input nilai, melakukan manajemen data mahasiswa, kelas dan mata kuliah.
+    - Dalam satu kelas mata kuliah, dosen akan menginput nilai ujian, kehadiran dan tugas. System akan secara otomatis menghitung/menampilkan nilai akhir dan grade.
+  - Buat rancangan database di MySQL untuk keperluan di atas, tentukan tabel dan _primary key_; kolom dan tipe datanya.
+  - Buat rancangan database dibuat per tabel dalam bentuk text dengan format seperti berikut, contoh:
+    - mahasiswa:
+      - nim: VARCHAR(10) PRIMARY KEY
+      - nama: VARCHAR(30)
+      - angkatan: VARCHAR(4)
+      - lahirTempat: VARCHAR(20)
+      - lahirTanggal: DATE
+      - ipk: DOUBLE
+      - _(lanjutkan...)_
+
 ## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
