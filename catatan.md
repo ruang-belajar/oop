@@ -133,9 +133,9 @@
       - lahirTanggal: DATE
       - ipk: DOUBLE
       - _(lanjutkan...)_
-  - Simpan hasil di Github Classroom: https://classroom.github.com/a/QwFpwJnB , dengan nama file: `sikampus-nama.md` (_nama_ diganti nama Anda)
+  - Simpan hasil di Github Classroom: https://classroom.github.com/a/QwFpwJnB , dengan nama file: `sikampus-nama.md` (_nama_ diganti nama Anda, tanpa spasi)
   - Kirim di tugas Edlink: "Desain Database (1)"
-- Tipe data di MySQL: VARCHAR(), INT, DOUBLE, DATE, TIMESTAMP, DATETIME
+- Tipe data di MySQL: VARCHAR(), INT, DOUBLE, DATE, TIMESTAMP, DATETIME, TEXT
 - Tipe data di Java: String, int, Integer, char, Date, Boolean, boolean
 
 ## Pertemuan X
