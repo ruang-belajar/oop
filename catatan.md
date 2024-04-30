@@ -127,12 +127,16 @@
   - Buat rancangan database dibuat per tabel dalam bentuk text dengan format seperti berikut, contoh:
     - mahasiswa:
       - nim: VARCHAR(10) PRIMARY KEY
-      - nama: VARCHAR(30)
+      - nama: VARCHAR(30) 
       - angkatan: VARCHAR(4)
       - lahirTempat: VARCHAR(20)
       - lahirTanggal: DATE
       - ipk: DOUBLE
       - _(lanjutkan...)_
+  - Simpan hasil di Github Classroom: https://classroom.github.com/a/QwFpwJnB , dengan nama file: `sikampus-nama.md` (_nama_ diganti nama Anda)
+  - Kirim di tugas Edlink: "Desain Database (1)"
+- Tipe data di MySQL: VARCHAR(), INT, DOUBLE, DATE, TIMESTAMP, DATETIME
+- Tipe data di Java: String, int, Integer, char, Date, Boolean, boolean
 
 ## Pertemuan X
 - Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
