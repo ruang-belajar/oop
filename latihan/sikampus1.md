@@ -11,22 +11,23 @@
   - usersId: VARCHAR(20)
   - status: ENUM(AKTIF,LULUS,DO)
 - dosen
-  - nid: VARCHAR(10)
+  - nid: VARCHAR(10) PRIMARY KEY
   - nama: VARCHAR(30)
   - status: ENUM(AKTIF,CUTI,RESIGN)
 - users
-  - id: VARCHAR(20)
+  - id: VARCHAR(20) PRIMARY KEY
   - password: VARCHAR(32) 
   - status: ENUM(AKTIF,NONAKTIF)
 - mataKuliah:
-  - id: VARCHAR(10)
+  - kode: VARCHAR(10) PRIMARY KEY
   - nama: VARCHAR(30)
+  - status: ENUM(AKTIF,NONAKTIF)
 - kelas:
-  - id: VARCHAR(10)
+  - kode: VARCHAR(10)
   - dosenNid: VARCHAR(10)
   - status: ENUM(AKTIF,SELESAI,BATAL)
 - peserta:
-  - kelasId: VARCHAR(10)
+  - kelasKode: VARCHAR(10)
   - nim: VARCHAR(10)
   - kehadiran: DOUBLE
   - tugas: DOUBLE
