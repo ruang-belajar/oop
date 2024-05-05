@@ -96,27 +96,27 @@
     + baca(id: String)
 * MataKuliah:
   * property:
-    + id: String
+    + kode: String
     + nama: String
     + status: ENUM(AKTIF,NONAKTIF)
   * method: 
     + tambah()
     + update() 
-    + baca(id: String)
+    + baca(kode: String)
 * kelas:
   * property:
-    + id: String
+    + kode: String
     + dosenNid: String
     + status: String
   * method:
     + tambah()
     + update()
-    + baca(id: String)
+    + baca(kode: String)
     + tambahPeserta(nim: String)
     + getPeserta(): List<Peserta>
 * peserta:
   * property:
-    + kelasId: String
+    + kelasKode: String
     + nim: String
     + kehadiran: Double
     + tugas: Double
@@ -125,7 +125,7 @@
   * method:
     + tambah()
     + update()
-    + baca(kelasId: String, nim: String)
+    + baca(kelasKode: String, nim: String)
     + hapus()
     
 ```
