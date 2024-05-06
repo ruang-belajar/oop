@@ -7,7 +7,7 @@
   - alamat: TEXT
   - angkatan: VARCHAR(4)
   - lahirTempat: VARCHAR(20)
-  - lahirTanggal: DATE
+  - lahirTanggal: DATE | NULL
   - usersId: VARCHAR(20)
   - status: ENUM(AKTIF,LULUS,DO)
 - dosen
@@ -72,37 +72,30 @@
     + lahirTanggal: Date
     + usersId: String
     + status: String
-    + ipk: Double
+    - ipk: Double
   * method:
-    + tambah()
-    + update()
+    + tambah(): boolean
+    + update(): boolean
     + baca(nim: String)
     + rekalkulasiIpk() 
+    + getIpk(): Double
 * Dosen
   * property
     + nid: String
     + nama: String
     + status: String
   * method:
-    + tambah()
-    + update() 
+    + tambah(): boolean
+    + update(): boolean
     + baca(nid: String)
-* Users
-  * property:
-    + id: String
-    + status: String
-  * method:
-    + tambah()
-    + update()
-    + baca(id: String)
 * MataKuliah:
   * property:
     + kode: String
     + nama: String
     + status: ENUM(AKTIF,NONAKTIF)
   * method: 
-    + tambah()
-    + update() 
+    + tambah(): boolean
+    + update(): boolean
     + baca(kode: String)
 * kelas:
   * property:
@@ -110,8 +103,8 @@
     + dosenNid: String
     + status: String
   * method:
-    + tambah()
-    + update()
+    + tambah(): boolean
+    + update(): boolean
     + baca(kode: String)
     + tambahPeserta(nim: String)
     + getPeserta(): List<Peserta>
@@ -122,11 +115,12 @@
     + kehadiran: Double
     + tugas: Double
     + ujian: Double
-    + grade: String
+    - grade: String
   * method:
-    + tambah()
-    + update()
+    + tambah(): boolean
+    + update(): boolean
     + baca(kelasKode: String, nim: String)
-    + hapus()
+    + hapus(): boolean
+    - getGrade(): String
     
 ```
