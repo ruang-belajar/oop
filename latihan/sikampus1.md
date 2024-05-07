@@ -10,6 +10,7 @@
   - lahirTanggal: DATE | NULL
   - usersId: VARCHAR(20)
   - status: ENUM(AKTIF,LULUS,DO)
+  - ipk: DOUBLE
 - dosen
   - nid: VARCHAR(10) PRIMARY KEY
   - nama: VARCHAR(30)
@@ -73,41 +74,53 @@
     + usersId: String
     + status: String
     - ipk: Double
+    - errMsg: String
   * method:
     + tambah(): boolean
     + update(): boolean
     + baca(nim: String)
     + rekalkulasiIpk() 
     + getIpk(): Double
+    + getList(): List<Mahasiswa>
+    - getErrMsg(): String
 * Dosen
   * property
     + nid: String
     + nama: String
     + status: String
+    - errMsg: String
   * method:
     + tambah(): boolean
     + update(): boolean
     + baca(nid: String)
+    + getList(): List<Dosen>
+    - getErrMsg(): String
 * MataKuliah:
   * property:
     + kode: String
     + nama: String
     + status: ENUM(AKTIF,NONAKTIF)
+    - errMsg: String
   * method: 
     + tambah(): boolean
     + update(): boolean
     + baca(kode: String)
-* kelas:
+    + getList(): List<MataKuliah>
+    - getErrMsg(): String
+* Kelas:
   * property:
     + kode: String
     + dosenNid: String
     + status: String
+    - errMsg: String
   * method:
     + tambah(): boolean
     + update(): boolean
     + baca(kode: String)
     + tambahPeserta(nim: String)
     + getPeserta(): List<Peserta>
+    + getList(): List<Kelas>
+    - getErrMsg(): String
 * peserta:
   * property:
     + kelasKode: String
@@ -116,11 +129,14 @@
     + tugas: Double
     + ujian: Double
     - grade: String
+    - errMsg: String
   * method:
     + tambah(): boolean
     + update(): boolean
     + baca(kelasKode: String, nim: String)
     + hapus(): boolean
+    + getList(kelasKode: String): List<Peserta>
     - getGrade(): String
+    - getErrMsg(): String
     
 ```
