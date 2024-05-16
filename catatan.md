@@ -138,5 +138,22 @@
 - Tipe data di MySQL: VARCHAR(), INT, DOUBLE, DATE, TIMESTAMP, DATETIME, TEXT
 - Tipe data di Java: String, int, Integer, char, Date, Boolean, boolean
 
-## Pertemuan X
-- Mengenali Object, Class, Method, Property pada program-program lain: _VBA Excel, Python, PHP, Java_
+## Pertemuan 6
+- Copy paste (sumber: https://github.com/pujangga123/LatihanOOP/tree/main/src/kampus)
+  - Mahasiswa.java
+  - MahasiswaTest.java
+  - Dosen.java
+  - DosenTest.java
+  - Karyawan.java
+  - KaryawanTest.java
+  - Users.java
+  - UsersKaryawan.java
+  - UsersKaryawanTest.java
+- [4 Pilar OOP](02-4-pilar.md)
+- Contoh _encapsulation_: `Mahasiswa.java`
+- Contoh _inheritance_: `Karyawan.java`
+- Contoh _abstraction_: `Users.java` `UsersKaryawan.java`
+- Contoh _polymorphic_: `UsersKaryawan.java`
+- Buat:
+  - UsersDosen.java
+  - UsersDosenTest.java

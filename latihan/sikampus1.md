@@ -8,7 +8,7 @@
   - angkatan: VARCHAR(4)
   - lahirTempat: VARCHAR(20)
   - lahirTanggal: DATE | NULL
-  - usersId: VARCHAR(20)
+  - usersId: VARCHAR(20) --> tidak jadi dipakai
   - status: ENUM(AKTIF,LULUS,DO)
   - ipk: DOUBLE
 - dosen
@@ -17,7 +17,8 @@
   - status: ENUM(AKTIF,CUTI,RESIGN)
 - users
   - id: VARCHAR(20) PRIMARY KEY
-  - password: VARCHAR(32) 
+  - passwd: VARCHAR(32) 
+  - tipe: ENUM(DOSEN,SISWA)
   - status: ENUM(AKTIF,NONAKTIF)
 - mataKuliah:
   - kode: VARCHAR(10) PRIMARY KEY
@@ -138,5 +139,7 @@
     + getList(kelasKode: String): List<Peserta>
     - getGrade(): String
     - getErrMsg(): String
-    
+* Users
+  * method:
+        
 ```
