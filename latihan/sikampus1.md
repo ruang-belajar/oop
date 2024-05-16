@@ -16,7 +16,7 @@
   - nama: VARCHAR(30)
   - status: ENUM(AKTIF,CUTI,RESIGN)
 - users
-  - id: VARCHAR(20) PRIMARY KEY
+  - id: VARCHAR(10) PRIMARY KEY
   - passwd: VARCHAR(32) 
   - tipe: ENUM(DOSEN,SISWA)
   - status: ENUM(AKTIF,NONAKTIF)
