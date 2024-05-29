@@ -136,7 +136,7 @@
     + update(): boolean
     + baca(kelasKode: String, nim: String)
     + hapus(): boolean
-    + getGrade(): String
+    + getMahasiswaNama(): String
     # getErrMsg(): String
     + getList(kelasKode: String): List<Peserta>
 

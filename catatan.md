@@ -157,3 +157,14 @@
 - Buat:
   - UsersDosen.java
   - UsersDosenTest.java
+
+## Pertemuan 7
+- [4 Prinsip OOP](02-4-pilar.md)
+
+## Pertemuan 8: UTS
+
+## Pertemuan 9
+- prep database `kelas` & `peserta` (lihat [sikampus1.ms](latihan/sikampus1.md))
+- Class `Kelas`
+- Class `Peserta`
+- 
