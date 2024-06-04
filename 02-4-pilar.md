@@ -2,57 +2,72 @@
 Ada 4 pilar penting yang perlu kalian ketahui dalam paradigma OOP.
 
 ## Inheritance (Pewarisan)
-Pewarisan merupakan salah satu cara meminimalisir penulisan kode yang berulang. Bagaimana bisa? baik contoh analoginya seperti ini. Anak umumnya mewarisi karakteristik dan perilaku yang dimiliki orang tuanya. Dalam kode kasus tersebut tidak memerlukan penulisan ulang kode pada objek Anak yang memiliki attribute (karakteristik) dan behaviour (perilaku) yang sama dengan orang tuanya. Kalian hanya perlu mewarisi attribute dan behaviour yang ada di objek Orang Tua ke objek Anaknya.
+Pewarisan merupakan salah satu cara meminimalisir penulisan kode yang berulang. Bagaimana bisa? baik contoh analoginya seperti ini. Anak umumnya mewarisi karakteristik dan perilaku yang dimiliki orang tuanya. Dalam kode kasus tersebut tidak memerlukan penulisan ulang kode pada objek `Anak` yang memiliki attribute (karakteristik) dan behaviour (perilaku) yang sama dengan orang tuanya. Kalian hanya perlu mewarisi attribute dan behaviour yang ada di objek Orang Tua ke objek Anaknya.
 
 Kemudian seperti apa contoh implementasinya dalam kode? simak contoh kode berikut
 
 ```java
 public class OrangTua {
-  protected String colorEyes = "coklat";
-  protected String colorHair = "hitam";
-  protected void playingFootball(){
-    System.out.println("Jago bermain football");
+  protected String warnaMata = "coklat";
+  protected String warnaRambut = "hitam";
+  protected void mainSepakbola(){
+    System.out.println("Jago bermain sepak bola");
   }
 }
+
 public class Anak extends OrangTua {
   public Anak() {
-    System.out.println("Anak memiliki warna mata " + colorEyes);
-    System.out.println("Anak memiliki warna rambut " + colorHair);
-    playingFootball();
+    System.out.println("Anak memiliki warna mata " + warnaMata);
+    System.out.println("Anak memiliki warna rambut " + warnaRambut);
+    mainSepakbola();
   }
 }
 ```
 
 Kemudian seperti apa outputnya ketika membuat instance dari class Anak?
-
+```
 Anak memiliki warna mata coklat
 Anak memiliki warna rambut hitam
-Jago bermain football
-Nah jika kalian lihat, pada class Anak kita menggunakan attribute dan behaviour yang diwariskan dari parent classnya (class OrangTua) sehingga kita tidak perlu lagi mendeklarasikan kembali atau membuat attribute baru pada class Anak.
+Jago bermain sepak bola
+```
+
+Perhatikan, pada class `Anak` kita menggunakan attribute dan behaviour yang diwariskan dari _parent_ classnya (class `OrangTua`) sehingga kita tidak perlu lagi mendeklarasikan kembali atau membuat attribute baru pada class `Anak`.
 
 ## Encapsulation
-Encapsulation didasari oleh kata _Capsul_ atau pembungkus. Kemudian apa itu encapsulation? Encapsulation merupakan proses pembungkusan suatu data pada kelas dengan cara mengisolasinya agar tidak dapat diakses diluar kelasnya. Dengan begini kita cukup menggunakan datanya saja tanpa perlu mengetahui proses detail terciptanya data tersebut. Berikut contohnya.
+Encapsulation didasari oleh kata _capsul_ atau pembungkus. Kemudian apa itu encapsulation? Encapsulation merupakan proses pembungkusan suatu data pada kelas dengan cara mengisolasinya agar tidak dapat diakses diluar kelasnya. Dengan begini kita cukup menggunakan datanya saja tanpa perlu mengetahui proses detail terciptanya data tersebut. Berikut contohnya.
 
 ```java
-public class Numbers {
- private List numbers = new ArrayList();
- 
- public void setNumbers(List newNumbers) {
-   // Logic sorting number ascending
-   numbers.clear();
-   numbers.addAll(newNumbers);
- }
- public List getNumbers() { return numbers; }
+public class OrangTua {
+  private int penghasilan = 1000000;
+  protected String warnaMata = "coklat";
+  protected String warnaRambut = "hitam";
+  protected void mainSepakbola(){
+    System.out.println("Jago bermain sepak bola");
+  }
+
+  public int getPenghasilan() {
+    return penghasilan;
+  }
+  public void setPenghasilan(int penghasilan) {
+    this.penghasilan = penghasilan;
+  }
+}
+
+public class Anak extends OrangTua {
+  public Anak() {
+    System.out.println("Anak memiliki warna mata " + warnaMata);
+    System.out.println("Anak memiliki warna rambut " + warnaRambut);
+    System.out.println("Anak memiliki penghasilan " + penghasilan); // akan menghasilkan error
+    System.out.println("Anak memiliki penghasilan " + getPenghasilan()); // cara untuk membaca property penghasilan
+    mainSepakbola();
+  }
 }
 ```
 
-Perhatikan kelas di atas, kita telah mengisolasi data yang ada di variabel number dengan memberikannya modifier private.
+Perhatikan kelas di atas, kita telah mengisolasi data yang ada di variabel _penghasilan_ dengan memberikannya modifier `private`. Isolasi ini menyebabkan jika class turunan mencoba merubah atribut tersebut maka akan menghasilkan error. Secara singkat, modifier merupakan hak akses yang bisa digunakan untuk membatasi suatu data atau function. penjelasan lebih lanjut silahkan kunjugi website berikut https://www.petanikode.com/java-oop-modifier/
 
-Apa itu modifier? secara singkat, modifier merupakan hak akses yang bisa digunakan untuk membatasi suatu data atau function. penjelasan lebih lanjut silahkan kunjugi website berikut https://www.petanikode.com/java-oop-modifier/
+Setelah mengisolasi data _penghasilan_, kita membuat fungsi _setter_ (`setPenghasilan`) dan _getter_ (`getPenghasilan`) agar nilai dari data tersebut dapat di ubah dan di ambil tanpa perlu mengakses datanya secara langsung. Dengan menerapkan _setter_ dan _getter_ kita tidak perlu lagi memikirkan proses apa yang terjadi ketika variabel number di ubah atau di ambil. Kita hanya fokus terhadap kegunaan dari kedua fungsi tersebut yakni untuk mengubah data di variabel number dan mengambilnya. Berikut referensi penjelasan lebih lanjut terkait _setter_ dan _getter_ https://www.petanikode.com/java-oop-setter-getter/
 
-Setelah mengisolasi data numbers, kita membuat fungsi setter dan getter agar nilai dari data tersebut dapat di ubah dan di ambil tanpa perlu mengakses datanya secara langsung. Dengan menerapkan setter dan getter kita tidak perlu lagi memikirkan proses apa yang terjadi ketika variabel number di ubah atau di ambil. Kita hanya fokus terhadap kegunaan dari kedua fungsi tersebut yakni untuk mengubah data di variabel number dan mengambilnya.
-
-Berikut referensi penjelasan lebih lanjut terkait setter dan getter https://www.petanikode.com/java-oop-setter-getter/
 
 ## Abstraction
 Abstrak bisa diartikan sebagai gambaran umum dari suatu yang mendetail. Abstraksi pada OOP dapat diartikan penyembunyian suatu proses yang dilakukan sebuah objek. Wah hampir sama dong dengan encapsulation? ya benar! namun abstraksi memiliki level yang lebih tinggi dari encapsulation. Apabila pada encapsulation dijelaskan bahwa data harus diisolasi maka pada abstraksi aksi dari objek tersebut yang harus disembunyikan. Jadi kita perlu tau objek mana yang beraksi, yang perlu diketahui hanyalah aksi apa yang akan dilakukan objek tersebut.
@@ -79,7 +94,7 @@ public class Postgre extends Databases {
 }
 ```
 
-Nah pada kasus ini kita ingin mengkoneksikan projek kita ke database. Awalnya kita menggunakan database Sql namun karena suatu kendala kita harus mengubahnya menjadi database postgre. Jika kalian tidak menerapkan abstraksi atau langsung mengimplementasikan kelas Sqlnya. Maka ketika hendak melakukan migrasi database, akan ada banyak kode yang perlu diubah. Berbeda dengan kasus ini. Simak penjelasan berikut.
+Pada kasus ini kita ingin mengkoneksikan projek kita ke database. Awalnya kita menggunakan database Sql namun karena suatu kendala kita harus mengubahnya menjadi database postgre. Jika kalian tidak menerapkan abstraksi atau langsung mengimplementasikan kelas Sqlnya. Maka ketika hendak melakukan migrasi database, akan ada banyak kode yang perlu diubah. Berbeda dengan kasus ini. Simak penjelasan berikut.
 
 ```java
 // Tanpa abstraksi
@@ -111,15 +126,25 @@ Polymorphism merupakan kemampuan sebuah objek untuk memiliki banyak bentuk. Cont
 Contoh penerapan kode
 
 ```java
-public class Ayah {
-  public void menghafalBahasa() {
-    System.out.println("Ayah menghafal 5 bahasa");
+public class OrangTua {
+  protected String warnaMata = "coklat";
+  protected String warnaRambut = "hitam";
+  protected void mainSepakbola(){
+    System.out.println("Jago bermain sepak bola");
   }
 }
-public class Anak extends Ayah {
+
+public class Anak extends OrangTua {
   @override
-   public void menghafalBahasa() {
-     System.out.println("Anak menghafal 7 bahasa");
-   }
+  public void mainSepakbola() {
+    System.out.println("Tidak bisa main sepak bola");
+  }
+
+  public Anak() {
+    System.out.println("Anak memiliki warna mata " + warnaMata);
+    System.out.println("Anak memiliki warna rambut " + warnaRambut);
+    mainSepakbola();
+  }  
 }
+
 ```

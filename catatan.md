@@ -158,13 +158,24 @@
   - UsersDosen.java
   - UsersDosenTest.java
 
-## Pertemuan 7
-- [4 Prinsip OOP](02-4-pilar.md)
+## Pertemuan 7: UTS
 
-## Pertemuan 8: UTS
-
-## Pertemuan 9
+## Pertemuan 8
+- Review konsep _encapsulation_
+  - Contoh class `Dosen`:
+    - property `errMsg` bersifat _private_ berarti tidak bisa diakses oleh class turunannya
+    - rubah sifat _private_ `errMsg` menjadi _protected_, maka ia bisa diakses oleh class turunannya
+- Review konsep _inheritance_
+  - class turunan mewarisi seluruh property dan method _parent_
+  - class turunan bisa memiliki method tambahan
+  - class turunan bisa memiliki method dengan nama yang sama dengan yang dimiliki _parent_
+  - Contoh class `Karyawan` ([check](https://github.com/pujangga123/LatihanOOP/blob/main/src/kampus/Karyawan.java))
+    - Class `Karyawan` turunan dari `Mahasiswa`. Mewarisi semua properti dan methodnya, hanya saja class `Karyawan` method tambahan `rekalkulasiScore()` yang tidak dimiliki class `Mahasiswa`
+- Review _abstraction_
+  - Contoh class `Users`
+    - class `Users` adalah class abstract, ia tidak bisa dibuat sebagai object, tapi ia bisa diturunkan menjadi class lain. Class turunannya lah yang akan dibuat menjadi objek.
+    - class abstract memberikan kerangka bagi _programmer lain_ jikalau mau membuat class tertentu, ia harus mengikuti kerangka yang disediakan oleh class abstract ini.
+- prep class `UsersDosen`
 - prep database `kelas` & `peserta` (lihat [sikampus1.ms](latihan/sikampus1.md))
 - Class `Kelas`
 - Class `Peserta`
-- 

@@ -122,7 +122,7 @@
     + getPeserta(): List<Peserta>
     + getList(): List<Kelas>
     - getErrMsg(): String
-* peserta:
+* Peserta:
   * property:
     + kelasKode: String
     + nim: String
@@ -139,6 +139,28 @@
     + getMahasiswaNama(): String
     # getErrMsg(): String
     + getList(kelasKode: String): List<Peserta>
-
+* Users:
+  * property:
+    + id: String
+    + tipe: String
+    + status: String
+    - nama: String
+    # errMsg: String
+  * method:
+    + tambah(): boolean
+    + update(): boolean
+    + abstract baca(id: String)
+    + setPassword(passwordBaru String)
+    + login(String passwd): boolean
+    + getNama(): String
+    + getErrMsg(): String
+* UsersMahasiswa extends Users:
+  * property:
+  * method:
+    - getList(): List<UsersMahasiswa>
+* DosenMahasiswa extends Users:
+  * property:
+  * method:
+    - getList(): List<UsersMahasiswa>
         
 ```
