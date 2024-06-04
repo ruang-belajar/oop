@@ -179,3 +179,8 @@
 - prep database `kelas` & `peserta` (lihat [sikampus1.ms](latihan/sikampus1.md))
 - Class `Kelas`
 - Class `Peserta`
+- Tugas:
+  - check [sikampus1.ms](latihan/sikampus1.md)
+  - Lengkapi `Peserta` dengan fungsi: `baca()`, `update`, `getErrMsg()`, `tambah()`
+  - Buat class `Kelas` dengan fungsi: `tambah()`, `update()`, `getErrMsg()`, `baca()`
+  - Siapkan database
