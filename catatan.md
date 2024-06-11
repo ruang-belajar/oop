@@ -184,3 +184,15 @@
   - Lengkapi `Peserta` dengan fungsi: `baca()`, `update`, `getErrMsg()`, `tambah()`
   - Buat class `Kelas` dengan fungsi: `tambah()`, `update()`, `getErrMsg()`, `baca()`
   - Siapkan database
+
+## Pertemuan 9
+- Repositori [SI Kampus 1](https://github.com/ruang-belajar/SIKampus1)
+- Buat class `Kelas`
+  - siapkan method `pesertaTambah()`
+    - gunakan method `Peserta.tambah()` 
+- [Static method](03-static-method.md)
+- Diperhitungkan sebagai nilai tugas secara langsung:
+  - `Peserta.java` & `PesertaTest.java`
+    - uji: `tambah()`, `baca()`, `update()`, `getList()`
+  - `Kelas.java` & `KelasTest.java`
+    - uji: `tambah()`, `baca()`, `update()`, `pesertaTambah()`, `getList()`
