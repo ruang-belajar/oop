@@ -196,3 +196,14 @@
     - uji: `tambah()`, `baca()`, `update()`, `getList()`
   - `Kelas.java` & `KelasTest.java`
     - uji: `tambah()`, `baca()`, `update()`, `pesertaTambah()`, `getList()`
+
+
+## Pertemuan 10:
+- Penjelasan prisip OOP: _Polymorphism_, _Abstraction_, _Inheritance_
+- Penjelasan _Constructor_
+- Class `MahlukHidup`, `Manusia`, `Atlet`
+
+## Pertemuan 11:
+- Periksa tugas `Peserta.java` dan `Kelas.java`
+  - Download [PesertaTest.java](https://github.com/pujangga123/LatihanOOP/blob/percobaan6/src/kampus/PesertaTest.java)
+  - Download [KelasText.java](https://github.com/pujangga123/LatihanOOP/blob/percobaan6/src/kampus/KelasTest.java)
