@@ -204,6 +204,17 @@
 - Class `MahlukHidup`, `Manusia`, `Atlet`
 
 ## Pertemuan 11:
+- Penjelasan prinsip OOP: _Encapsulation_
+- Static Function
+- UML Symbol
+- [Latihan 2](latihan/latihan-02.md)
+  - Pembahasan:
+    - Beri komentar pada: contructor, access (private/public), abstract class
+  - Tugas: Kerjakan soal konversi program
+
+
+---
+
 - Periksa tugas `Peserta.java` dan `Kelas.java`
   - Download [PesertaTest.java](https://github.com/pujangga123/LatihanOOP/blob/percobaan6/src/kampus/PesertaTest.java)
   - Download [KelasText.java](https://github.com/pujangga123/LatihanOOP/blob/percobaan6/src/kampus/KelasTest.java)
