@@ -204,9 +204,7 @@
 - Class `MahlukHidup`, `Manusia`, `Atlet`
 
 ## Pertemuan 11:
-- Penjelasan prinsip OOP: _Encapsulation_
-- Static Function
-- UML Symbol
+- Rekap 4 Prinsip OOP
 - [Latihan 2](latihan/latihan-02.md)
   - Pembahasan:
     - Beri komentar pada: contructor, access (private/public), abstract class
