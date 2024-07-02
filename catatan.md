@@ -184,3 +184,37 @@
   - Lengkapi `Peserta` dengan fungsi: `baca()`, `update`, `getErrMsg()`, `tambah()`
   - Buat class `Kelas` dengan fungsi: `tambah()`, `update()`, `getErrMsg()`, `baca()`
   - Siapkan database
+
+## Pertemuan 9
+- Repositori [SI Kampus 1](https://github.com/ruang-belajar/SIKampus1)
+- Buat class `Kelas`
+  - siapkan method `pesertaTambah()`
+    - gunakan method `Peserta.tambah()` 
+- [Static method](03-static-method.md)
+- Diperhitungkan sebagai nilai tugas secara langsung:
+  - `Peserta.java` & `PesertaTest.java`
+    - uji: `tambah()`, `baca()`, `update()`, `getList()`
+  - `Kelas.java` & `KelasTest.java`
+    - uji: `tambah()`, `baca()`, `update()`, `pesertaTambah()`, `getList()`
+
+
+## Pertemuan 10:
+- Penjelasan prisip OOP: _Polymorphism_, _Abstraction_, _Inheritance_
+- Penjelasan _Constructor_
+- Class `MahlukHidup`, `Manusia`, `Atlet`
+
+## Pertemuan 11:
+- Penjelasan prinsip OOP: _Encapsulation_
+- Static Function
+- UML Symbol
+- [Latihan 2](latihan/latihan-02.md)
+  - Pembahasan:
+    - Beri komentar pada: contructor, access (private/public), abstract class
+  - Tugas: Kerjakan soal konversi program
+
+
+---
+
+- Periksa tugas `Peserta.java` dan `Kelas.java`
+  - Download [PesertaTest.java](https://github.com/pujangga123/LatihanOOP/blob/percobaan6/src/kampus/PesertaTest.java)
+  - Download [KelasText.java](https://github.com/pujangga123/LatihanOOP/blob/percobaan6/src/kampus/KelasTest.java)
