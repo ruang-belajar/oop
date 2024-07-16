@@ -1,6 +1,6 @@
-# Soal Konversi Program
+# OOP Dalam Berbagai Bahasa Pemrograman
 
-Contoh program dalam Java
+## Java
 
 **Kendaraan.java**
 ```java
@@ -96,51 +96,90 @@ public class MotorTest1 {
         m.tampilkanInfo();
     }
 }
-
 ```
+
+## Soal:
+1. Class declaration
+2. Access Control?
+3. Abstract?
+4. Constructor?
+5. this?
+6. Inheritance
 
 ---
 
-## Soal:
-Berdasarkan contoh program di atas, buat program serupa menggunakan bahasa pemrograman: _Python, Javascript, VBA, C#, Paskal, PHP, Typescript, Swift, C++, VB.Net_
+## Jawaban
 
-## Pembagian Tugas
-| Nama	| Tugas |
-| --- | --- |
-| Ansya Mutiara	| Python |
-| Rowan Willy San Remo | Typescript |
-| Agus | JavaScript |
-| Didin Muslihudin | VBA |
-| Rhisna Setiani | C# |
-| Nurico Aditya Nugroho	| Paskal |
-| Zenittha shifa shabilla	| PHP |
-| RIFKI MAULANA	| Python |
-| SITI JUBAEDAH	| Swift |
-| Devi Yulianti	| C++ |
-| Naja Zakiyatul Qisthi | VB.Net |
-| Andri Gunawan	| Python |
-| Firman Hadiana | Typescript |
-| Shofia Z Rachmalina	| JavaScript |
-| ERLANGGA JULIARDI	| VBA |
-| Ajeng Ayu Anggraeni	| C# |
-| Gustamil Arifin | Paskal |
-| Cipto Nuryauman | PHP |
-| INDRAWAN TAUPIKURROHMAN	| C# |
-| Rinka Laura Fadila	| Swift |
-| Adit Permana	| C++ |
-| Rani Suryani | VB.Net |
-| Robby Hidayat Tulloh	| Python |
-| Fera Herawati	| Typescript |
-| Wafa Nurrofiqoh	| JavaScript |
-| Ade Tia Nursobah	| VBA |
-| Rani Tevalina	| C# |
-| Ali Fauzi Ali	| Paskal |
-| kamaludin	| PHP |
-| Reynaldi Setia Parhan	| VB.Net |
-| Andri Al Hudani	| Swift |
-| Ghefira Raudhatul Jannah	| C++ |
-| Hilda setiawati | VB.Net |
-| ALVINA DWI NOVALIA	| Python |
-| Fina Selviyani	| Typescript |
-| Celsi nur rahmawati	| JavaScript |
-| MAURA IRMA NURLITA	| VBA |
+### Pascal
+1. Static
+2. `private`/`public`
+3. 
+4.
+5.
+6.
+
+### Typescript
+1. class Kendaraan
+2. private/public
+3. abstract
+4. constructor()
+5. this
+6. extends
+
+### Javascript
+1. class Kendaraan
+2. tanda # untuk property private
+3. abstract
+4. constructor()
+5. this
+6. extends
+
+### PHP
+1. class Kendaraan
+2. public/private
+3.
+4. constructor
+5. $this
+6. extends
+
+### Python
+1. class Kendaraan
+2.
+3. abstract
+4. 
+5. `this`
+6. `extends`
+
+### VB.Net
+1. Public Class Kendaraan
+2. 
+3. 
+4. Public Sub New()
+5. Me
+6. Inherits
+
+### VBA
+1. Module as class
+2. `Public`/`Private`
+3. MustInherit 
+4. -
+5. `Me`
+6. `Implements`
+
+### C#
+1. class Kendaraan
+2. `public`/`private`
+3. `abstract`
+4. `public class`
+5. `this`
+6. `:`
+
+### Swift
+1. class Kendaraan
+2. `public`/`private`
+3. `protocol`
+4. `init`
+5. `this`
+6. `:`
+
+
