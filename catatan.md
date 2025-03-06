@@ -9,16 +9,15 @@
   - Terminologi: class, object, sttribute/property, method/function, parameter
   - Check [Latihan 1](latihan/latihan-01.md)
 
-- Persiapan program:
+- Yang digunakan untuk belajar OOP:
   - MS Excel (VBA)
   - Python + Visual Studio Code
-  - XAMPP (Apache + PHP)
   - Scratch (online/desktop)
   - StarUML
-  - Netbeans
+  - Java + Netbeans
   - Godot
 
-===
+---
 
 ## Pertemuan 2
 - Setup StarUML: https://staruml.io/download/
