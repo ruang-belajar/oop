@@ -1,4 +1,4 @@
-# Catatan Kuliah 2024
+# Catatan Kuliah 2025
 
 ## Pertemuan 1
 - [PPTX](pptx/pbo-pertemuan-1.pptx)
@@ -17,6 +17,8 @@
   - StarUML
   - Netbeans
   - Godot
+
+===
 
 ## Pertemuan 2
 - Setup StarUML: https://staruml.io/download/
