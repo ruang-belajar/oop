@@ -79,6 +79,35 @@ Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Prolog_.
 - **Parameter:** Memanggil method bisa juga disertai dengan parameter.
   Parameter adalah nilai yang diberikan kepada suatu fungsi atau metode ketika dipanggil. Parameter digunakan untuk memberikan informasi yang diperlukan untuk menjalankan fungsi atau metode tersebut.
 
+> 💡 Check [Latihan 1](latihan/latihan-01.md)
+
+## Perbandingan Kode Program Imperatif vs OOP
+Berikut ini perbandingan kode program Python yang ditulis menggunakan paradigma _imperatif_ dan _OOP_.
+
+**Imperatif**
+```python
+def hitung_luas_persegi_panjang(panjang, lebar):
+    return panjang * lebar
+
+panjang = 10
+lebar = 5
+luas = hitung_luas_persegi_panjang(panjang, lebar)
+print("Luas:", luas)</code>
+```
+
+**OOP**
+```python
+class PersegiPanjang:
+    def __init__(self, panjang, lebar):
+        self.panjang = panjang
+        self.lebar = lebar
+
+    def hitung_luas(self):
+        return self.panjang * self.lebar
+
+persegi_panjang = PersegiPanjang(10, 5)
+print("Luas:", persegi_panjang.hitung_luas())
+```
 
 
 ## Referensi
