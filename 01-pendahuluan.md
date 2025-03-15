@@ -16,7 +16,7 @@ Paradigma ini didasari oleh konsep mesin Von Newman (stored program concept) sek
 
 Kelebihan dari paradigma ini adalah efisiensi eksekusi karena lebih dekat dengan konsep mesin, relatif paling mudah dipelajari dibanding paradigma lain. Sedangkan kekurangannya, pada program yang berskala besar, kompleksitas programnya akan jauh bertambah besar seiring dengan bertambahkan ukuran program.
 
-Contoh bahasa pemrogaman yang menggunakan paradigma prosedural atau imperatif adalah: Algol, Pascal, Fortran, Basic, Cobol, C, ...
+Contoh bahasa pemrogaman yang menggunakan paradigma prosedural atau imperatif adalah: Pascal, Fortran, Basic, Cobol, C, ...
   
 ### Object Oriented (OOP)
   
@@ -24,7 +24,7 @@ Paradigma Pemrograman Berorientasi Objek (OOP) menggunakan konsep class dan obje
 
 mempunyai hirarki artinya sebuah class dapat diturunkan menjadi sebuah class baru yang juga memiliki attribut dan method class diatasnya. Dengan begitu dalam paradigma ini dikenal konsep modularitas, penggunaan kembali (reuse) serta kemudahan modifikasi.
 
-Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Smalltalk, Eifel, Delphi, Java, C#, VB.NET,..._
+Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Smalltalk, Delphi, Java, C#, VB.NET,..._
 
 ### Functional
   
@@ -32,7 +32,7 @@ Paradigma dengan pendekatan yang berfokus pada penggunaan fungsi sebagai unit da
 
 Paradigma fungsional menekankan pada penghindaran perubahan keadaan dan mutasi data, serta mengutamakan komputasi yang bersifat deklaratif dan tanpa efek samping.
 
-Contoh bahasa pemrograman yang menggunakan paradigma fungsional adalah _LOGO, APL, LISP, Scheme, Haskell, ..._
+Contoh bahasa pemrograman yang menggunakan paradigma fungsional adalah _LOGO, LISP, Scheme, Haskell, ..._
 
 ### Declarative/Logic/Predicative
   
