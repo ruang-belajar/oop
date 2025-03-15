@@ -44,11 +44,12 @@ Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Prolog_.
 
 
 ## Pengantar Object Oriented Programming (OOP)
-* PBO atau dalam bahasa inggris OOP (Object Oriented Programming) adalah suatu metode pemrograman yang berorientasi kepada objek.
+* PBO/OOP (Object Oriented Programming) adalah suatu metode pemrograman yang berorientasi kepada objek.
 * Tujuan dari OOP diciptakan adalah untuk mempermudah pengembangan program dengan cara mengikuti model yang telah ada di kehidupan sehari-hari.
 * Jadi setiap bagian dari suatu permasalahan adalah objek, nah objek itu sendiri merupakan gabungan dari beberapa objek yang lebih kecil lagi.
-* Contohnya: Pesawat, Pesawat adalah sebuah objek. Pesawat itu sendiri terbentuk dari beberapa objek yang lebih kecil lagi seperti mesin, roda, baling-baling, kursi, dll. Pesawat sebagai objek yang terbentuk dari objekobjek yang lebih kecil saling berhubungan, berinteraksi, berkomunikasi dan saling mengirim pesan kepada objek-objek yang lainnya.
-* Begitu juga dengan program, sebuah objek yang besar dibentuk dari beberapa objek yang lebih kecil, objek-objek itu saling berkomunikasi, dan saling berkirim pesan kepada objek yang lain.
+* Contoh 1: Pesawat, Pesawat adalah sebuah objek. Pesawat itu sendiri terbentuk dari beberapa objek yang lebih kecil lagi seperti mesin, roda, baling-baling, kursi, dll. Pesawat sebagai objek yang terbentuk dari objekobjek yang lebih kecil saling berhubungan, berinteraksi, berkomunikasi dan saling mengirim pesan kepada objek-objek yang lainnya.
+* Contoh 2: Sebuat form terdiri dari komponen input box, dropdown dan button. Masing-masing komponen itu memiliki atribut warna tulisan, lebar box, jenis tulisan.
+  ![](images/simple-form.png)
  
 ### Alasan menggunakan paradigma OOP
 * **Real world programming:** Kode program seperti objek dunia nyata. Hal ini membuat program proses penyusunan program menjadi sesuatu yang intuitif
@@ -113,10 +114,6 @@ print("Luas:", persegi_panjang.hitung_luas())
 
 ## Referensi
 
-*PPTX*
-- [PBO - Pertemuan 1.pptx](../pptx/pbo-pertemuan-1.pptx)
-- [PBO - Pertemuan 2.pptx](../pptx/pbo-pertemuan-2.pptx)
-- [PBO - Pertemuan 3.pptx](../pptx/pbo-pertemuan-3.pptx)
-- [PBO - Pertemuan 4.pptx](../pptx/pbo-pertemuan-4.pptx)
+**PPTX**
 - https://ndoware.com/paradigma-pemrograman.html
 - https://www.scaler.com/topics/oops-advantages/
