@@ -61,6 +61,34 @@ Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Prolog_.
 * Kode program relatif lebih banyak
 * Performance berkurang
 
+## Perbandingan Kode Program Imperatif vs OOP
+Berikut ini perbandingan kode program Python yang ditulis menggunakan paradigma _imperatif_ dan _OOP_.
+
+**Imperatif**
+```python
+def hitung_luas_persegi_panjang(panjang, lebar):
+    return panjang * lebar
+
+panjang = 10
+lebar = 5
+luas = hitung_luas_persegi_panjang(panjang, lebar)
+print("Luas:", luas)
+```
+
+**OOP**
+```python
+class PersegiPanjang:
+    def __init__(self, panjang, lebar):
+        self.panjang = panjang
+        self.lebar = lebar
+
+    def hitung_luas(self):
+        return self.panjang * self.lebar
+
+persegi_panjang = PersegiPanjang(10, 5)
+print("Luas:", persegi_panjang.hitung_luas())
+```
+
 ## Elemen-elemen Penting OOP
 - **Class:** template yang digunakan untuk membuat objek.\
   Class merupakan sebuah prototipe atau blueprints yang mendefinisikan variabel-variabel dan method-method secara umum.\
@@ -81,33 +109,6 @@ Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Prolog_.
 
 > 💡 Check [Latihan 1](latihan/latihan-01.md)
 
-## Perbandingan Kode Program Imperatif vs OOP
-Berikut ini perbandingan kode program Python yang ditulis menggunakan paradigma _imperatif_ dan _OOP_.
-
-**Imperatif**
-```python
-def hitung_luas_persegi_panjang(panjang, lebar):
-    return panjang * lebar
-
-panjang = 10
-lebar = 5
-luas = hitung_luas_persegi_panjang(panjang, lebar)
-print("Luas:", luas)</code>
-```
-
-**OOP**
-```python
-class PersegiPanjang:
-    def __init__(self, panjang, lebar):
-        self.panjang = panjang
-        self.lebar = lebar
-
-    def hitung_luas(self):
-        return self.panjang * self.lebar
-
-persegi_panjang = PersegiPanjang(10, 5)
-print("Luas:", persegi_panjang.hitung_luas())
-```
 
 
 ## Referensi
