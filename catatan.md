@@ -12,10 +12,20 @@
 ---
 
 ## Pertemuan 2
-- Review Java
-  - Deklarasi variabel
-  - Standar penamaan variabel, class dan objek
-  - 
-- 
+- [Review Java](https://github.com/ruang-belajar/java/)
+  - [Syntax dasar](https://github.com/ruang-belajar/java/blob/main/docs/03-syntax.md)
+  - [IF](https://github.com/ruang-belajar/java/blob/main/docs/07-pengambilan-keputusan.md)
+  - [Looping](https://github.com/ruang-belajar/java/blob/main/docs/08-pengulangan.md)
+- [Membuat Class](02-membuat-class.md)
+- Kerjakan [Latihan 7](latihan/latihan-07.md)
+- Buat class Lingkaran.
+  - Class ini memiliki property `radius`
+  - Class ini memiliki method `luas()` untuk menghitung luas
+  - Class ini memiliki method `keliling()` untuk menghitung luas
+  - Class ini memiliki method `diameter()` untuk menghitung diameter
+  - Class ini memiliki method `perbesar(n)` untuk memperbesar `radius` sebanyak `n` kali
+
+---
 
 ## Pertemuan 3
+- UML & Class diagram
