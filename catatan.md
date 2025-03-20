@@ -14,11 +14,16 @@
 ## Pertemuan 2
 - [Review Java](https://github.com/ruang-belajar/java/)
   - [Syntax dasar](https://github.com/ruang-belajar/java/blob/main/docs/03-syntax.md)
+  - Hal yang perlu diperhatikan
+    - Java adalah bahasa pemrograman yang _case sensitive_
+    - aturan penulisan
+    - Nama class selalu sama dengan nama file
+    - nama _package_ harus sama dengan _nama folder_    
   - [IF](https://github.com/ruang-belajar/java/blob/main/docs/07-pengambilan-keputusan.md)
   - [Looping](https://github.com/ruang-belajar/java/blob/main/docs/08-pengulangan.md)
 - [Membuat Class](02-membuat-class.md)
 - Kerjakan [Latihan 7](latihan/latihan-07.md)
-- Buat class Lingkaran.
+- Tugas: Buat class `Lingkaran`.
   - Class ini memiliki property `radius`
   - Class ini memiliki method `luas()` untuk menghitung luas
   - Class ini memiliki method `keliling()` untuk menghitung luas
