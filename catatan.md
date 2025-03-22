@@ -13,6 +13,13 @@
 
 ## Pertemuan 2
 - [Review Java](https://github.com/ruang-belajar/java/)
+  - Materi umum:
+    - Variabel
+    - Operasi
+    - IF
+    - Loop
+    - Membuat fungsi
+    - Menggunakan fungsi standard  
   - [Syntax dasar](https://github.com/ruang-belajar/java/blob/main/docs/03-syntax.md)
   - Hal yang perlu diperhatikan
     - Java adalah bahasa pemrograman yang _case sensitive_
