@@ -36,6 +36,8 @@
   - Class ini memiliki method `keliling()` untuk menghitung luas
   - Class ini memiliki method `diameter()` untuk menghitung diameter
   - Class ini memiliki method `perbesar(n)` untuk memperbesar `radius` sebanyak `n` kali
+- Buat akun Github (nama akun harus bisa dikenali)
+- Download & install Github
 
 ---
 

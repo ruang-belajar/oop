@@ -32,7 +32,7 @@ public class MembuatClass1 {
 
 ## Constructor
 
-Constructor adalah fungsi yang dipanggil pada saat objek dibuat. Pada constructor bisa mempersiapkan atribut yang akan dikenakan pada objek, contructor ini juga bisa memiliki parameter.
+Constructor adalah fungsi yang dipanggil pada saat objek dibuat. Pada constructor kita bisa mempersiapkan atribut yang akan dikenakan pada objek, contructor ini juga bisa memiliki parameter.
 
 ```java
 class Persegi {
