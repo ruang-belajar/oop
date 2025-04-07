@@ -42,4 +42,11 @@
 ---
 
 ## Pertemuan 3
+- Review tugas
+- Setup Github
+  - Accept assignment
+  - Clone
+  - Copy file ke folder repository
+  - Commit & Push
+  - Buka folder repostory menggunakan Netbeans
 - UML & Class diagram
