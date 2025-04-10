@@ -48,7 +48,7 @@
   - Buka folder repostory menggunakan Netbeans
 - [4 Prinsip OOP](03-4-pilar.md)
   - Prinsip: Inheritance
-- Kerjakan [Latihan 8](latihan/latihan-08.md)
-
+- Kerjakan **Soal 1** dan **Soal 2** di [Latihan 8](latihan/latihan-08.md) 
+- Tugas: Kerjakan **Soal 3** di [Latihan 8](latihan/latihan-08.md) 
 
 ---

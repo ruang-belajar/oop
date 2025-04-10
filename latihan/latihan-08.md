@@ -52,15 +52,22 @@ public class Main {
 ## Soal Latihan
 ### Soal 1
 file: **Inheritance1.java**
-- Buat class _OrangBarat_
+- Buat class _OrangBarat_ turunan dari _Orang_
 - Memiliki fungsi `panggilan()` yang memunculkan nama panggilan menggunakan nama belakang, sesuai dengan jenis kelamin. Misal:
   - _Budi Raharjo_ ➡ _Mr. Raharjo_
   - _Laura Hermawan_ ➡ _Ms. Hermawan_
   
 ### Soal 2
 file: **Inheritance2.java**
-- Buat class _OrangIndonesia_
+- Buat class _OrangIndonesia_ turunan dari _Orang_
 - Memiliki status `menikah` _boolean_
 - Memiliki fungsi `panggilan()` yang memunculkan nama panggilan sesuai status dan jenis kelamin: _Bapak_, _Ibu_, _Saudari_, _Saudara_. Misal:\
   - _Budi Raharjo_, menikah ➡ _Bapak Budi_
   - _Laura Hermawan_, belum menikah ➡ _Saudari Laura_
+
+### Soal 3
+file: **Inheritance3.java**
+- Buat class _OrangIndonesia2_ turunan dari _Orang_
+- Memiliki status `menikah` _boolean_
+- Memiliki `umur` Integer
+- Memiliki fungsi `panggilan()` yang memunculkan nama panggilan sesuai status dan jenis kelamin: _Bapak_, _Ibu_, _Saudari_, _Saudara_, Tambahkan penggilan _Oma_ dan _Opa_ jika ia seseorang berumur lebih dari 60 tahun.
