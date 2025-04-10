@@ -11,6 +11,13 @@
 
 ## Pertemuan 2
 - [Review Java](https://github.com/ruang-belajar/java/)
+  - Materi umum:
+    - Variabel
+    - Operasi
+    - IF
+    - Loop
+    - Membuat fungsi
+    - Menggunakan fungsi standard  
   - [Syntax dasar](https://github.com/ruang-belajar/java/blob/main/docs/03-syntax.md)
   - Hal yang perlu diperhatikan
     - Java adalah bahasa pemrograman yang _case sensitive_
@@ -27,8 +34,17 @@
   - Class ini memiliki method `keliling()` untuk menghitung luas
   - Class ini memiliki method `diameter()` untuk menghitung diameter
   - Class ini memiliki method `perbesar(n)` untuk memperbesar `radius` sebanyak `n` kali
+- Buat akun Github (nama akun harus bisa dikenali)
+- Download & install Github
 
 ---
 
 ## Pertemuan 3
+- Review tugas
+- Setup Github
+  - Accept assignment
+  - Clone
+  - Copy file ke folder repository
+  - Commit & Push
+  - Buka folder repostory menggunakan Netbeans
 - UML & Class diagram
