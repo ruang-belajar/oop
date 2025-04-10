@@ -37,7 +37,6 @@
 - Buat akun Github (nama akun harus bisa dikenali)
 - Download & install Github
 
----
 
 ## Pertemuan 3
 - Review tugas
@@ -47,4 +46,9 @@
   - Copy file ke folder repository
   - Commit & Push
   - Buka folder repostory menggunakan Netbeans
-- UML & Class diagram
+- [4 Prinsip OOP](03-4-pilar.md)
+  - Prinsip: Inheritance
+- Kerjakan [Latihan 8](latihan/latihan-08.md)
+
+
+---
