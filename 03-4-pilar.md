@@ -112,39 +112,100 @@ public class Main {
 [source code @ leetcode](https://leetcode.com/playground/DF63wuGb) untuk melihat bagaimana mengimplementasikan _inheritace_ pada class yang memiliki _constructor_
 
 ## Encapsulation
-Encapsulation didasari oleh kata _capsul_ atau pembungkus. Kemudian apa itu encapsulation? Encapsulation merupakan proses pembungkusan suatu data pada kelas dengan cara mengisolasinya agar tidak dapat diakses diluar kelasnya. Dengan begini kita cukup menggunakan datanya saja tanpa perlu mengetahui proses detail terciptanya data tersebut. Berikut contohnya.
+Encapsulation didasari oleh kata _capsul_ atau pembungkus. Encapsulation merupakan proses pembungkusan suatu data pada kelas dengan cara mengisolasinya agar tidak dapat diakses diluar kelasnya. Dengan begini kita cukup menggunakan datanya saja tanpa perlu mengetahui proses detail terciptanya data tersebut. Berikut contohnya.
+
+```java
+class Orang {
+    public String namaDepan;
+    public String namaBelakang;
+    private String jenisKelamin; 
+    private String titel; 
+
+    public Orang(String namaDepan, String namaBelakang, String jenisKelamin) {
+        this.namaDepan = namaDepan;
+        this.namaBelakang = namaBelakang;
+        this.setJenisKelamin(jenisKelamin);
+    }
+    
+    public String namaLengkap() {
+        return this.namaDepan+" "+this.namaBelakang;
+    }
+    
+    // perubahan jenis kelamin tidak bisa langsung, harus lewat fungsi ini
+    // karena perubahan jenis kelamin harus merubah juga titel
+    public void setJenisKelamin(String jenisKelamin) {
+        if(jenisKelamin.equals("L")) {
+            this.titel = "Bapak";
+        } 
+        if(jenisKelamin.equals("P")) {
+            this.titel = "Ibu";
+        }
+    }
+    
+    // fungsi untuk membaca jenis kelamin
+    public String getJenisKelamin() {
+        return this.jenisKelamin;
+    }
+    
+    // fungsi untuk membaca titel
+    public String getTitel() {
+        return this.titel;
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Orang orang1 = new Orang("Budi", "Rahman", "L");
+        System.out.println(orang1.getTitel()+" "+orang1.namaLengkap());
+
+        Orang orang2 = new Orang("Dyah", "Ayu", "P");
+        System.out.println(orang2.getTitel()+" "+orang2.namaLengkap());
+        orang2.namaDepan = "Nurani"; // contoh merubah nama secara langsung
+        System.out.println(orang2.getTitel()+" "+orang2.namaLengkap());
+        
+        // contoh salah:
+        // baris program dibawah ini akan error jika dieksekusi
+        //orang2.jenisKelamin = "P";
+        //System.out.println(orang2.jenisKelamin);
+        
+  }
+}
+```
+[source code @ leetcode](https://leetcode.com/playground/o4fyisto) 
+
+Perhatikan kelas di atas, telah mengisolasi data yang ada di property `jenisKelamin` dan `titel` dengan memberikannya modifier `private`. Dengan demikian, mengubah properti ini di luar class akan menyebabkan error. Sebagai contoh, Anda bisa _uncomment_ perintah `orang2.jenisKelamin = "P"` atau perintah `System.out.println(orang2.jenisKelamin)`, kemudian eksekusi programnya. Java akan mengeluarkan _runtime error_.
+
+Untuk mengubah atau membaca properti dengan modifier `private` maka kita menggunakan fungsi _getter_ (`getJenisKelamin()`) dan _setter_ (`setJenisKelamin()`).
+
+## Polymorphism
+Polymorphism merupakan kemampuan sebuah objek untuk memiliki banyak bentuk. Contohnya ketika seorang ayah memiliki kemampuan menghafal 5 bahasa, belum tentu anaknya mewarisi hal tersebut. Bisa saja sang anak memiliki kemampuan melebihi atau bahkan kurang dari ayahnya.
+
+Contoh penerapan kode
 
 ```java
 public class OrangTua {
-  private int penghasilan = 1000000;
   protected String warnaMata = "coklat";
   protected String warnaRambut = "hitam";
   protected void mainSepakbola(){
     System.out.println("Jago bermain sepak bola");
   }
-
-  public int getPenghasilan() {
-    return penghasilan;
-  }
-  public void setPenghasilan(int penghasilan) {
-    this.penghasilan = penghasilan;
-  }
 }
 
 public class Anak extends OrangTua {
+  @override
+  public void mainSepakbola() {
+    System.out.println("Tidak bisa main sepak bola");
+  }
+
   public Anak() {
     System.out.println("Anak memiliki warna mata " + warnaMata);
     System.out.println("Anak memiliki warna rambut " + warnaRambut);
-    System.out.println("Anak memiliki penghasilan " + penghasilan); // akan menghasilkan error
-    System.out.println("Anak memiliki penghasilan " + getPenghasilan()); // cara untuk membaca property penghasilan
     mainSepakbola();
-  }
+  }  
 }
+
 ```
-
-Perhatikan kelas di atas, kita telah mengisolasi data yang ada di variabel _penghasilan_ dengan memberikannya modifier `private`. Isolasi ini menyebabkan jika class turunan mencoba merubah atribut tersebut maka akan menghasilkan error. Secara singkat, modifier merupakan hak akses yang bisa digunakan untuk membatasi suatu data atau function. penjelasan lebih lanjut silahkan kunjugi website berikut https://www.petanikode.com/java-oop-modifier/
-
-Setelah mengisolasi data _penghasilan_, kita membuat fungsi _setter_ (`setPenghasilan`) dan _getter_ (`getPenghasilan`) agar nilai dari data tersebut dapat di ubah dan di ambil tanpa perlu mengakses datanya secara langsung. Dengan menerapkan _setter_ dan _getter_ kita tidak perlu lagi memikirkan proses apa yang terjadi ketika variabel number di ubah atau di ambil. Kita hanya fokus terhadap kegunaan dari kedua fungsi tersebut yakni untuk mengubah data di variabel number dan mengambilnya. Berikut referensi penjelasan lebih lanjut terkait _setter_ dan _getter_ https://www.petanikode.com/java-oop-setter-getter/
 
 
 ## Abstraction
@@ -198,31 +259,3 @@ Sudah terlihat bukan perbedaannya? dengan menggunakan abstraksi kita tak perlu k
 
 NB : Berbeda dengan abstraksi yang menggunakan keyword extends, kelas interface menggunakan keyword implements dalam penggunaannya.
 
-## Polymorphism
-Polymorphism merupakan kemampuan sebuah objek untuk memiliki banyak bentuk. Contohnya ketika seorang ayah memiliki kemampuan menghafal 5 bahasa, belum tentu anaknya mewarisi hal tersebut. Bisa saja sang anak memiliki kemampuan melebihi atau bahkan kurang dari ayahnya.
-
-Contoh penerapan kode
-
-```java
-public class OrangTua {
-  protected String warnaMata = "coklat";
-  protected String warnaRambut = "hitam";
-  protected void mainSepakbola(){
-    System.out.println("Jago bermain sepak bola");
-  }
-}
-
-public class Anak extends OrangTua {
-  @override
-  public void mainSepakbola() {
-    System.out.println("Tidak bisa main sepak bola");
-  }
-
-  public Anak() {
-    System.out.println("Anak memiliki warna mata " + warnaMata);
-    System.out.println("Anak memiliki warna rambut " + warnaRambut);
-    mainSepakbola();
-  }  
-}
-
-```
