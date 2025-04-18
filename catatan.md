@@ -63,7 +63,9 @@
     - [Demo Encapsulation #2](https://leetcode.com/playground/mDEJ65mo)
 - Gunakan shortcut `Alt+Enter` untuk bantu membuat constructor dari class turunan
 - Gunakan shortcut `Alt+Ins` untuk membuat fungsi _setter_ dan _getter_
-- Latihan: Kerjakan [Latihan 9](latihan/latihan-09.md) **Soal 1**
-- Tugas: [Latihan 9](latihan/latihan-09.md) **Soal 2**
+- Latihan: Kerjakan [Latihan 9](latihan/latihan-09.md) **Soal 1**.\
+  Simpan dengan nama file `OrangSunda1.java`
+- Tugas: [Latihan 9](latihan/latihan-09.md) **Soal 2**\
+  Simpan dalam format _docx_ (MS Word) dengan nama file `UML-OrangSunda1.docx`
 
 ---
