@@ -111,6 +111,60 @@ public class Main {
 ```
 [source code @ leetcode](https://leetcode.com/playground/DF63wuGb) untuk melihat bagaimana mengimplementasikan _inheritace_ pada class yang memiliki _constructor_
 
+
+## Polymorphism
+Prinsip polymorphism ini menyatakan bahwa dalam OOP, suatu class bisa memiliki beberapa method dengan nama yang sama, tapi berbeda paramter. Perhatikan contoh program berikut:
+
+```java
+class Orang {
+    public String namaDepan;
+    public String namaBelakang;
+
+    public Orang(String namaDepan, String namaBelakang) {
+        this.namaDepan = namaDepan;
+        this.namaBelakang = namaBelakang;
+    }
+    
+    public String namaLengkap() {
+        return this.namaDepan+" "+this.namaBelakang;
+    }
+    
+    // polymorphism: 
+    public String salam() {
+        return "Halo, "+this.namaLengkap();
+    }
+    
+    // overload: fungsi yang sama (salam), tapi memberikan output yang sama
+    public String salam(String jenisKelamin) {
+        if(jenisKelamin.equals("L")){
+            return "Salam, pa "+this.namaDepan;
+        } else {
+            return "Salam, bu "+this.namaDepan;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Orang orang1 = new Orang("Budi", "Rahman");
+        System.out.println(orang1.salam());
+        System.out.println(orang1.salam("L"));
+        
+        System.out.println();
+
+        Orang orang2 = new Orang("Dyah", "Ayu");
+        System.out.println(orang2.salam());
+        System.out.println(orang2.salam("P"));
+        
+  }
+}
+
+```
+
+[source code @ leetcode](https://leetcode.com/playground/Sx62MtHF)
+
+Pada contoh program di atas, class `Orang` memiliki dua fungsi `salam()`, tapi salah satunya memiliki parameter yang berbeda. Dengan demikian seorang kita memiliki "satu fungsi" tapi bisa melakukan tugas yang berbeda, sesuai dengan parameter yang diberikan.
+
 ## Encapsulation
 Encapsulation didasari oleh kata _capsul_ atau pembungkus. Encapsulation merupakan proses pembungkusan suatu data pada kelas dengan cara mengisolasinya agar tidak dapat diakses diluar kelasnya. Dengan begini kita cukup menggunakan datanya saja tanpa perlu mengetahui proses detail terciptanya data tersebut. Berikut contohnya.
 
@@ -177,35 +231,6 @@ public class Main {
 Perhatikan kelas di atas, telah mengisolasi data yang ada di property `jenisKelamin` dan `titel` dengan memberikannya modifier `private`. Dengan demikian, mengubah properti ini di luar class akan menyebabkan error. Sebagai contoh, Anda bisa _uncomment_ perintah `orang2.jenisKelamin = "P"` atau perintah `System.out.println(orang2.jenisKelamin)`, kemudian eksekusi programnya. Java akan mengeluarkan _runtime error_.
 
 Untuk mengubah atau membaca properti dengan modifier `private` maka kita menggunakan fungsi _getter_ (`getJenisKelamin()`) dan _setter_ (`setJenisKelamin()`).
-
-## Polymorphism
-Polymorphism merupakan kemampuan sebuah objek untuk memiliki banyak bentuk. Contohnya ketika seorang ayah memiliki kemampuan menghafal 5 bahasa, belum tentu anaknya mewarisi hal tersebut. Bisa saja sang anak memiliki kemampuan melebihi atau bahkan kurang dari ayahnya.
-
-Contoh penerapan kode
-
-```java
-public class OrangTua {
-  protected String warnaMata = "coklat";
-  protected String warnaRambut = "hitam";
-  protected void mainSepakbola(){
-    System.out.println("Jago bermain sepak bola");
-  }
-}
-
-public class Anak extends OrangTua {
-  @override
-  public void mainSepakbola() {
-    System.out.println("Tidak bisa main sepak bola");
-  }
-
-  public Anak() {
-    System.out.println("Anak memiliki warna mata " + warnaMata);
-    System.out.println("Anak memiliki warna rambut " + warnaRambut);
-    mainSepakbola();
-  }  
-}
-
-```
 
 
 ## Abstraction

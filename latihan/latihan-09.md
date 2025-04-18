@@ -43,12 +43,11 @@ class Orang {
 public class Main {
     public static void main(String[] args) {
         Orang orang1 = new Orang("Budi", "Rahman", "L");
-        System.out.println(orang1.getTitel()+" "+orang1.namaLengkap());
+        System.out.println(orang1.panggilan());
+        System.out.println(orang1.panggilan(20));
 
         Orang orang2 = new Orang("Dyah", "Ayu", "P");
-        System.out.println(orang2.getTitel()+" "+orang2.namaLengkap());
-        orang2.namaDepan = "Nurani"; // contoh merubah nama secara langsung
-        System.out.println(orang2.getTitel()+" "+orang2.namaLengkap());
+        System.out.println(orang2.panggilan(40));
                
     }
 }
@@ -56,4 +55,9 @@ public class Main {
 
 ## Latihan
 ### Soal 1
-Berdasarkan **contoh program #1**, buat class turunan 
+Berdasarkan **contoh program #1**, buat class turunan `OrangSunda` dengan ketentuan sebagai berikut:
+- Memiliki method `panggilan()` yang memunculkan nama panggilan _Mas/Mba_ sesuai dengan jenis kelamin, diikuti dengan nama depan. Misal: _Budi Rahajo_ ➡ _Mas Budi_
+- Memiliki method `panggilan(umur)` yang memunculkan nama panggilan _Mas/Mba_ sesuai dengan jenis kemian, jika umur < 30 tahun maka akan ditambahkan 3 huruf pertama sebagai nama panggilan. Misal: _Budi Rahajo_ ➡ _Mas Bud_; _Ratnasari_ ➡ _Mba Rat_.
+
+### Soal 2
+Berdasarkan program **Soal 1**, buat class diagram dari class tersebut
