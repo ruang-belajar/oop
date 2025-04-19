@@ -58,6 +58,7 @@ public class Main {
 Berdasarkan **contoh program #1**, buat class turunan `OrangSunda` dengan ketentuan sebagai berikut:
 - Memiliki method `panggilan()` yang memunculkan nama panggilan _Mas/Mba_ sesuai dengan jenis kelamin, diikuti dengan nama depan. Misal: _Budi Rahajo_ ➡ _Mas Budi_
 - Memiliki method `panggilan(umur)` yang memunculkan nama panggilan _Mas/Mba_ sesuai dengan jenis kemian, jika umur < 30 tahun maka akan ditambahkan 3 huruf pertama sebagai nama panggilan. Misal: _Budi Rahajo_ ➡ _Mas Bud_; _Ratnasari_ ➡ _Mba Rat_.
+- Rubah program utama untuk bisa menampilkan contoh penggunaan fungsi `panggilan` yang barusan dibuat.
 
 ### Soal 2
-Berdasarkan program **Soal 1**, buat class diagram dari class tersebut
+Berdasarkan program **Soal 1**, buat _class diagram_ dari class tersebut
