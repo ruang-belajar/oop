@@ -69,4 +69,14 @@
   Simpan dalam format _docx_ (MS Word) dengan nama file `UML-OrangSunda1.docx`\
   Upload lewat repository github
 
+
+## Pertemuan 5
+- Review tugas
+- [4 Prinsip OOP](03-4-pilar.md): _Abstraction_
+- Check [DataKeluarga.java](latihan/abstraction/DataKeluarga.java), [Keluarga.java](latihan/abstraction/Keluarga.java), [Orang.java](latihan/abstraction/Orang.java), [OrangJawa.java](latihan/abstraction/OrangJawa.java), [OrangSunda.java](latihan/abstraction/OrangSunda.java).
+- [Class Diagram](06-class-diagram.md)
+
+## Pertemuan 6
+- Analisa kasus
+
 ---

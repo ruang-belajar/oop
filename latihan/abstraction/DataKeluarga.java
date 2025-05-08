@@ -1,4 +1,4 @@
-
+// sesuaikan package dengan project Anda
 package latihan2;
 
 public class DataKeluarga {
@@ -12,7 +12,10 @@ public class DataKeluarga {
         
         Keluarga keluarga = new Keluarga(pria,wanita);
         keluarga.salam();
+
+        // Beberapa contoh berikut ini akan menghasilkan error
         
+        // Orang orang = new Orang(); // error karena class Orang adalah class abstrak
         
     }
     

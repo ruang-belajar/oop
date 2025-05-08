@@ -1,7 +1,14 @@
 
 package latihan2;
 
+
+// class Keluarga
+// class ini berfungsi untuk mengelompokkan orang-orang dalam satu keluarga
 public class Keluarga {
+
+    // suami dan istri adalah objek dari class Orang
+    // berarti suami dan istri adalah bisa OrangJawa atau OrangSunda
+    // karena class Orang adalah class abstrak
     public Orang suami;
     public Orang istri;
     
