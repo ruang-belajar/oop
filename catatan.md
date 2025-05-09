@@ -77,6 +77,8 @@
 - [Class Diagram](06-class-diagram.md)
 
 ## Pertemuan 6
-- Analisa kasus
+- Review: Abstraction
+- Analisa kasus: check [Class Diagram](06-class-diagram.md)
+- Latihan: Kerjakan [Latihan 10](latihan/latihan-10.md)
 
 ---

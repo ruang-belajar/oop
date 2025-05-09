@@ -39,10 +39,33 @@ Pewarisan atau inheritance dapat disebut juga generalization dalam class diagram
 
 ![](images/classdiagram-4.jpg)
 
-### Contoh
+### Contoh Class Diagram
 Berikut ini adalah contoh dari diagram kelas sistem perpustakaan.
 
 ![](images/classdiagram-5.jpg)
+
+### Contoh Implementasi Class Diagram Menjadi Source Code
+Perhatikan class diagram berikut:
+
+![](images/classdiagram-6.jpg)
+
+Jika class diagram di atas diubah menjadi source code, maka akan menjadi seperti berikut:
+
+```java
+public class Point {
+    private int x;
+    private int y;
+    
+    public setX(int x) {
+        this.x = x;
+    }
+    
+    public setY(int y) {
+        this.y = y;
+    }
+}
+```
+
 
 ---
 *Referensi:*
