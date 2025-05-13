@@ -1,7 +1,7 @@
-class Siswa {
+public class Siswa {
     private String nama;
     private int umur;
-    private String nis; // Nomor Induk Siswa
+    private String nis;
     private String kelas;
 
     public Siswa(String nama, int umur, String nis, String kelas) {
@@ -43,11 +43,16 @@ class Siswa {
         this.kelas = kelas;
     }
 
-    // Method untuk menampilkan informasi siswa
     public void tampilkanInfo() {
         System.out.println("Nama  : " + nama);
         System.out.println("Umur  : " + umur);
         System.out.println("NIS   : " + nis);
         System.out.println("Kelas : " + kelas);
+    }
+
+    public static void main(String[] args) {
+        int usia = 16;
+        Siswa siswa1 = new Siswa("Budi", usia, "123456", "XII IPA 1");
+        siswa1.tampilkanInfo();
     }
 }
