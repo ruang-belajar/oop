@@ -82,3 +82,22 @@
 - Latihan: Kerjakan [Latihan 10](latihan/latihan-10.md)
 
 ---
+
+## Pertemuan 9
+- - Pelajari tentang bagaimana [membaca input dari user lewat keyboard](docs/04-input-output.md)
+- Pelajari tentang [Exception](docs/13-exception.md)
+- Latihan, contoh program:
+  ```
+  class OrangBaru {
+    public String nama;
+    public Integer usia;
+    
+    public OrangBaru(String nama, Integer usia) throws Exception {
+        this.nama = nama;
+        this.usia = usia;        
+    }
+    public void panggilan() {
+        System.out.println("Bapak/ibu" + this.nama +", usia Anda "+this.usia+" tahun" );
+    }
+  }
+  ```
