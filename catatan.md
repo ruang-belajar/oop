@@ -92,7 +92,7 @@
     public String nama;
     public Integer usia;
     
-    public OrangBaru(String nama, Integer usia) throws Exception {
+    public OrangBaru(String nama, Integer usia) {
         this.nama = nama;
         this.usia = usia;        
     }
