@@ -84,8 +84,8 @@
 ---
 
 ## Pertemuan 9
-- - Pelajari tentang bagaimana [membaca input dari user lewat keyboard](docs/04-input-output.md)
-- Pelajari tentang [Exception](docs/13-exception.md)
+- Pelajari tentang bagaimana [membaca input dari user lewat keyboard](https://github.com/ruang-belajar/java/blob/main/docs/04-input-output.md)
+- Pelajari tentang [Exception](https://github.com/ruang-belajar/java/blob/main/docs/13-exception.md)
 - Latihan, contoh program:
   ```
   class OrangBaru {
