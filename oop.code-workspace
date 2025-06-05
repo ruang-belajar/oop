@@ -1,9 +1,12 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
-	],
+        {
+            "path": "."
+        },
+        {
+            "path": "../java"
+        }
+    ],
 	"settings": {
 		"IDX.aI.enableInlineCompletion": false,
 		"IDX.aI.enableCodebaseIndexing": false

@@ -85,6 +85,27 @@
 
 ## Pertemuan 9
 - Pelajari tentang bagaimana [membaca input dari user lewat keyboard](https://github.com/ruang-belajar/java/blob/main/docs/04-input-output.md)
+    ```java
+    import java.util.Scanner;
+
+    public class Bilangan1 {
+        public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
+            int n1 = 0;
+            int n2 = 0;
+
+            System.out.print("A? ");
+            n1 = scan.nextInt();
+
+            System.out.print("B? ");
+            n2 = scan.nextInt();
+
+            System.out.print("A x B = "+(n1*n2));
+
+            scan.close();
+        }
+    }
+    ```
 - Pelajari tentang [Exception](https://github.com/ruang-belajar/java/blob/main/docs/13-exception.md)
 - Latihan, contoh program:
   ```
