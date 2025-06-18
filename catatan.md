@@ -178,6 +178,7 @@
             mahasiswa.nim="2000001";
             mahasiswa.nama = "Budianto";
             mahasiswa.nilai = 20;                        
+            mahasiswa.tambah();
             System.out.println("Data berhasil ditambahkan");
         }
     }
