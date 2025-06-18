@@ -186,3 +186,145 @@
 - Eksekusi `DemoMahasiswa1.java`, lihat hasilnya di tabel _mahasiswa_ lewat phpMyAdmin
 - Latihan:
   - Tambahkan method `baca()`, `hapus()` dan `update()`.
+
+## Pertemuan 11
+- [Static Method & Property](https://github.com/ruang-belajar/java/blob/main/docs/12-static.md)
+- Implementasi static method ke class Mahasiswa.\
+  - Buat file `Mahasiswa2.java` seperti berikut:
+    ```java
+    package crud;
+
+    import java.sql.*;
+
+    public class Mahasiswa2 {
+
+        public String nim;
+        public String nama;
+        public Integer nilai;
+
+        //static method
+        public static boolean tambah(String nim, String nama, Integer nilai)  {
+            String DBDRIVER = "com.mysql.cj.jdbc.Driver";
+            String DBCONNECTION = "jdbc:mysql://localhost:3306/test";
+            String DBUSER = "root";
+            String DBPASS = "";
+
+            Connection conn = null;
+            PreparedStatement st;
+
+            try {
+                Class.forName(DBDRIVER);
+                conn = DriverManager.getConnection(DBCONNECTION, DBUSER, DBPASS);
+
+                // prepare select statement
+                String sql = "INSERT INTO mahasiswa (nim,nama,nilai) values (?,?,?)";
+                st = conn.prepareStatement(sql);
+                st.setString(1, nim);
+                st.setString(2, nama);
+                st.setInt(3, nilai);
+                st.executeUpdate();
+                conn.close();
+                return true;
+            } catch (Exception ex) {
+                return false;
+            }
+        }
+        
+        // static method
+        public static Mahasiswa2 baca(String nim) {
+            String DBDRIVER = "com.mysql.cj.jdbc.Driver";
+            String DBCONNECTION = "jdbc:mysql://localhost:3306/test";
+            String DBUSER = "root";
+            String DBPASS = "";
+
+            Connection conn = null;
+            PreparedStatement st;
+            ResultSet rs;
+
+            try {
+                Class.forName(DBDRIVER);
+                conn = DriverManager.getConnection(DBCONNECTION, DBUSER, DBPASS);
+
+                // prepare select statement
+                String sql = "SELECT * FROM mahasiswa where nim=?";
+                st = conn.prepareStatement(sql);
+                st.setString(1, nim);
+                rs = st.executeQuery();
+                
+                if(rs.next()) {
+                    Mahasiswa2 mahasiswa = new Mahasiswa2();
+                    mahasiswa.nim = rs.getString("nim");
+                    mahasiswa.nama = rs.getString("nama");
+                    mahasiswa.nilai = rs.getInt("nilai");
+                    System.out.println(rs.getString("nama"));
+                    conn.close();
+                    return mahasiswa;
+                } else {
+                    System.out.println("xxxxx");
+                    conn.close();
+                    return null;
+                }
+                
+            } catch (Exception ex) {
+                ex.printStackTrace();
+                return null;
+            }
+        }
+        
+        public boolean update()  {
+            String DBDRIVER = "com.mysql.cj.jdbc.Driver";
+            String DBCONNECTION = "jdbc:mysql://localhost:3306/test";
+            String DBUSER = "root";
+            String DBPASS = "";
+
+            Connection conn = null;
+            PreparedStatement st;
+
+            try {
+                Class.forName(DBDRIVER);
+                conn = DriverManager.getConnection(DBCONNECTION, DBUSER, DBPASS);
+
+                // prepare select statement
+                String sql = "UPDATE mahasiswa SET nama=?,nilai=? WHERE nim=?";
+                st = conn.prepareStatement(sql);
+                st.setString(1, this.nama);
+                st.setInt(2, this.nilai);
+                st.setString(3, this.nim);
+                st.executeUpdate();
+                conn.close();
+                return true;
+            } catch (Exception ex) {
+                return false;
+            }
+
+        }
+    }
+    ```
+  - File: `DemoMahasiswa2.java`
+    ```java
+    package crud;
+
+    public class DemoMahasiswa2 {
+
+        public static void main(String[] args) {
+            String nim = "3000001";
+            String nama = "Kris";
+            Integer nilai = 65;
+            Mahasiswa2.tambah(nim, nama, nilai);
+
+            // membaca objek sekaligus membuat objek menggunakan static method
+            Mahasiswa2 mahasiswa = Mahasiswa2.baca(nim);
+
+            System.out.println(mahasiswa.nama);
+            
+            // merubah data
+            mahasiswa.nama = "Arya";
+            mahasiswa.update();
+            
+            System.out.println(mahasiswa.nama);
+
+        }
+    }
+    ```
+
+
