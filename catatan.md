@@ -256,11 +256,10 @@
                     mahasiswa.nim = rs.getString("nim");
                     mahasiswa.nama = rs.getString("nama");
                     mahasiswa.nilai = rs.getInt("nilai");
-                    System.out.println(rs.getString("nama"));
                     conn.close();
                     return mahasiswa;
                 } else {
-                    System.out.println("xxxxx");
+                    System.out.println("data tidak ditemukan");
                     conn.close();
                     return null;
                 }
@@ -314,17 +313,18 @@
 
             // membaca objek sekaligus membuat objek menggunakan static method
             Mahasiswa2 mahasiswa = Mahasiswa2.baca(nim);
-
             System.out.println(mahasiswa.nama);
             
             // merubah data
             mahasiswa.nama = "Arya";
             mahasiswa.update();
-            
             System.out.println(mahasiswa.nama);
 
         }
     }
     ```
+
+## Pertemuan 12
+- [Membuat GUI dengan Java](https://github.com/ruang-belajar/java/blob/main/docs/20-gui.md)
 
 
