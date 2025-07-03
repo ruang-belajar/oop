@@ -326,5 +326,38 @@
 
 ## Pertemuan 12
 - [Membuat GUI dengan Java](https://github.com/ruang-belajar/java/blob/main/docs/20-gui.md)
+- Latihan:
+  - Buat `App1.java`
+  - Buat `FormUtama.java`
 
+## Pertemuan 13
+- Buat form `MahasiswaTambah`
+  - _JTextField_: `textNim`
+  - _JTextField_: `textNama`
+  - _JButton_: `btnTambah`
+    - _ActionPerformed_: tambahkan data berdasarkan data dari `textNim` dan `textNama` menggunakan class [Mahasiswa3.java](latihan/src/Mahasiswa3.java)
+- Buat _JFrame_: `FormMahassiwa`
+  - Buat _JButton_: `btnMahasiswaTambah`
+    - ActionPerformed: tampilkan form `MahasiswaTambah`
+- Edit `FormUtama`
+  - Buat _JButton_: `btnMahasiswa`
+    - _ActionPerformed_: tampilkan form `Mahasiswa`
+- Buat _JFrame_ : `MahasiswaList`
+  - Buat JTable: `tableMahasiswa`
+    - Tambahkan kolom _NIM_ dan _Nama_
+  - Buat JButton: `btnReload`
+    - _ActionPerformed_: hapus isi tabel dan isi ulang dengan data dari `test.mahasiswa` (database dari pertemuan sebelumnya)
+      ```java
+      // prep model
+      DefaultTableModel model = (DefaultTableModel)(tableMahasiswa.getModel());
+      // hapus semua row di table
+      model.setRowCount(0);
+      
+      // baca data
+      ArrayList<Mahasiswa3> list = Mahasiswa3.getList();
+      // tambahkan data ke tabel lewat objek model
+      for(Mahasiswa3 row: list) {
+          model.addRow(new Object[]{row.nim,row.nama});
+      }
+      ```
 
