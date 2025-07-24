@@ -5,6 +5,9 @@
         },
         {
             "path": "../java"
+        },
+        {
+            "path": "../artikel"
         }
     ],
 	"settings": {
