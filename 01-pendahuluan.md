@@ -4,116 +4,197 @@
 
 ![](images/martial-arts.webp)
 
+
+# Paradigma Pemrograman
+
+## 1. Pendahuluan
+
+Dalam ilmu komputer, terdapat berbagai cara atau pendekatan untuk menyelesaikan masalah menggunakan program komputer. Pendekatan tersebut disebut **Paradigma Pemrograman**.
+
+Paradigma pemrograman membantu programmer dalam:
+- Menyusun logika program
+- Mengorganisasi kode
+- Mengelola kompleksitas sistem
+- Membuat program lebih mudah dipelihara
+
+Dengan kata lain, paradigma pemrograman adalah **cara berpikir dalam menulis program**.
+
+---
+
+## 2. Pengertian Paradigma Pemrograman
+
 Paradigma adalah sudut pandang tertentu yang digunakan terhadap suatu problem, realitas, keadaan dan sebagainya. Paradigma membatasi dan mengkondisikan jalan berpikir seseorang, mengarahkannya terhadap beberapa atribut dan mengabaikan atribut lain, sehingga paradigma hanya memberikan pandangan yang terbatas terhadap sebuah realitas.
 
-Secara umum, ada 4 paradigma pemrograman, yaitu: Imperatif/Procedural, Object Oriented, Functional, dan Declarative/Predicative/Logic.
+Paradigma menentukan:
+- bagaimana program disusun
+- bagaimana data dikelola
+- bagaimana instruksi dieksekusi
+- bagaimana komponen program saling berinteraksi
 
-### Imperatif/Prosedural
-  
+---
+
+## 3. Analogi Paradigma Pemrograman
+
+Agar lebih mudah dipahami, paradigma dapat dianalogikan sebagai **strategi menyelesaikan masalah**.
+
+Misalnya seseorang ingin memasak mie:
+
+- Ada yang mengikuti **langkah-langkah resep secara berurutan**
+    
+- Ada yang **membagi tugas ke beberapa orang**
+    
+- Ada yang **menyusun bahan menjadi modul terpisah**
+    
+
+Walaupun tujuannya sama, pendekatan yang digunakan berbeda.
+
+Begitu juga dalam pemrograman.
+
+---
+
+## 4. Jenis-Jenis Paradigma Pemrograman
+
+Beberapa paradigma yang umum digunakan dalam pengembangan perangkat lunak:
+
+### 1️⃣ Paradigma Prosedural
+
 Paradigma imperatif dalam pemrograman merujuk pada pendekatan dalam penulisan kode yang berfokus pada urutan instruksi yang harus dieksekusi oleh komputer untuk mencapai suatu tujuan.
 
 Paradigma ini didasari oleh konsep mesin Von Newman (stored program concept) sekelompok tempat penyimpanan (memori), yang dibedakan menjadi memori instruksi dan memori data, masing-masing memori tersebut dapat diberi nama dan nilai, selanjutnya instruksi akan dieksekusi satu persatu secara sekuensial oleh sebuah proses tunggal.
 
 Kelebihan dari paradigma ini adalah efisiensi eksekusi karena lebih dekat dengan konsep mesin, relatif paling mudah dipelajari dibanding paradigma lain. Sedangkan kekurangannya, pada program yang berskala besar, kompleksitas programnya akan jauh bertambah besar seiring dengan bertambahkan ukuran program.
 
-Contoh bahasa pemrogaman yang menggunakan paradigma prosedural atau imperatif adalah: Pascal, Fortran, Basic, Cobol, C, ...
-  
-### Object Oriented (OOP)
-  
-Paradigma Pemrograman Berorientasi Objek (OOP) menggunakan konsep class dan object, object adalah instansiasi dari class, setiap object akan mempunyai attribute dan method, masing-masing object dapat berinteraksi dengan object lainnya meskipun berasal dari class yang berbeda.
+Paradigma ini berfokus pada **urutan langkah atau prosedur**.
 
-mempunyai hirarki artinya sebuah class dapat diturunkan menjadi sebuah class baru yang juga memiliki attribut dan method class diatasnya. Dengan begitu dalam paradigma ini dikenal konsep modularitas, penggunaan kembali (reuse) serta kemudahan modifikasi.
+Ciri utama:
+- Program terdiri dari fungsi atau prosedur
+- Eksekusi berjalan secara berurutan
+- Data dan fungsi biasanya terpisah
 
-Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Smalltalk, Delphi, Java, C#, VB.NET,..._
+Contoh bahasa pemrograman:
+- C
+- Pascal
 
-### Functional
-  
-Paradigma dengan pendekatan yang berfokus pada penggunaan fungsi sebagai unit dasar dari komputasi dan penanganan data. Dalam paradigma ini, fungsi dianggap sebagai objek yang dapat dipindahkan dan digunakan dalam cara yang sama seperti nilai-nilai lainnya.
+Contoh struktur program:
+
+```
+main()
+ ├── inputData()
+ ├── processData()
+ └── displayResult()
+```
+
+---
+
+### 2. Paradigma Berorientasi Objek (OOP)
+
+OOP adalah salah satu paradigma pemrograman. Paradigma ini berfokus pada **objek yang merepresentasikan entitas dunia nyata**.
+
+Konsep utama:
+- Object
+- Class
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+
+Contoh bahasa pemrograman:
+- Java
+- C++
+- Python
+    
+
+Dalam paradigma ini program dibangun dari **interaksi antar objek**. Paradigma ini yang akan menjadi fokus pembahasan kita di semester ini.
+
+---
+
+### 3. Paradigma Fungsional
+
+Paradigma ini berfokus pada **fungsi matematika**. Paradigma dengan pendekatan yang berfokus pada penggunaan fungsi sebagai unit dasar dari komputasi dan penanganan data. Dalam paradigma ini, fungsi dianggap sebagai objek yang dapat dipindahkan dan digunakan dalam cara yang sama seperti nilai-nilai lainnya.
 
 Paradigma fungsional menekankan pada penghindaran perubahan keadaan dan mutasi data, serta mengutamakan komputasi yang bersifat deklaratif dan tanpa efek samping.
 
-Contoh bahasa pemrograman yang menggunakan paradigma fungsional adalah _LOGO, LISP, Scheme, Haskell, ..._
+Ciri utama:
+- fungsi bersifat _pure function_
+- tidak mengubah state
+- tidak memiliki efek samping (_side effects_)
 
-### Declarative/Logic/Predicative
-  
+Contoh bahasa:
+- Haskell
+- Lisp
+
+Contoh sederhana:
+
+```
+f(x) = x + 2
+```
+
+Output hanya bergantung pada input.
+
+---
+
+### 4. Paradigma Deklaratif
+
 Paradigma dengan  pendekatan di mana program direpresentasikan sebagai kumpulan fakta dan aturan logis, dan komputasi dijalankan dengan menggunakan inferensi logis untuk mencari solusi.
 
 Dalam paradigma ini, programmer mendeskripsikan relasi antara fakta-fakta dan aturan-aturan yang berlaku dalam domain masalah, dan sistem pemrograman logika menggabungkan informasi ini untuk mencapai tujuan yang diinginkan.
 
-Contoh bahasa pemrograman yang menggunakan paradigma ini adalah: _Prolog_.
+Paradigma ini berfokus pada **apa yang ingin dicapai**, bukan **bagaimana mencapainya**.
 
+Contoh:
 
-## Pengantar Object Oriented Programming (OOP)
-* PBO/OOP (Object Oriented Programming) adalah suatu metode pemrograman yang berorientasi kepada objek.
-* Tujuan dari OOP diciptakan adalah untuk mempermudah pengembangan program dengan cara mengikuti model yang telah ada di kehidupan sehari-hari.
-* Jadi setiap bagian dari suatu permasalahan adalah objek, nah objek itu sendiri merupakan gabungan dari beberapa objek yang lebih kecil lagi.
-* Contoh 1: Pesawat, Pesawat adalah sebuah objek. Pesawat itu sendiri terbentuk dari beberapa objek yang lebih kecil lagi seperti mesin, roda, baling-baling, kursi, dll. Pesawat sebagai objek yang terbentuk dari objekobjek yang lebih kecil saling berhubungan, berinteraksi, berkomunikasi dan saling mengirim pesan kepada objek-objek yang lainnya.
-* Contoh 2: Sebuat form terdiri dari komponen input box, dropdown dan button. Masing-masing komponen itu memiliki atribut warna tulisan, lebar box, jenis tulisan.
-  ![](images/simple-form.png)
- 
-### Alasan menggunakan paradigma OOP
-* **Real world programming:** Kode program seperti objek dunia nyata. Hal ini membuat program proses penyusunan program menjadi sesuatu yang intuitif
-* **Reusability of code:** Mendorong developer untuk membuat kode program yang bisa dipakai ulang untuk keperluan serupa.
-* **Resilience to change:** Proses maintenance dan pengembangan program bisa dibuat pada objek yang spesifik, sehingga mengurangi error dan membantu proses debugging.
-* **Information hiding:** Proteksi/menyembungikan sebagian proses, masing-masing developer bisa fokus pada bidang yang menjadi bagiannya.
-* **Modularity of code:** Membagi program yang kompleks menjadi bagian-bagian kecil sehingga lebih mudah untuk dibuat dan di-maintenance.
+Dalam database query:
 
-## Batasan OOP
-* Kode program relatif lebih banyak
-* Performance berkurang
-
-## Perbandingan Kode Program Imperatif vs OOP
-Berikut ini perbandingan kode program Python yang ditulis menggunakan paradigma _imperatif_ dan _OOP_.
-
-**Imperatif**
-```python
-def hitung_luas_persegi_panjang(panjang, lebar):
-    return panjang * lebar
-
-panjang = 10
-lebar = 5
-luas = hitung_luas_persegi_panjang(panjang, lebar)
-print("Luas:", luas)
+```sql
+SELECT nama FROM mahasiswa WHERE nilai > 80;
 ```
 
-**OOP**
-```python
-class PersegiPanjang:
-    def __init__(self, panjang, lebar):
-        self.panjang = panjang
-        self.lebar = lebar
+Programmer hanya mendeklarasikan **hasil yang diinginkan**.
 
-    def hitung_luas(self):
-        return self.panjang * self.lebar
+Contoh bahasa:
+- SQL
+- Prolog
 
-persegi_panjang = PersegiPanjang(10, 5)
-print("Luas:", persegi_panjang.hitung_luas())
-```
+---
 
-## Elemen-elemen Penting OOP
-- **Class:** template yang digunakan untuk membuat objek.\
-  Class merupakan sebuah prototipe atau blueprints yang mendefinisikan variabel-variabel dan method-method secara umum.\
-  Sebuah program yang utuh terdiri dari beberapa class yang saling berinteraksi satu sama lain. Class yang serupa atau memiliki kesamaan dikumpulkan dalam satu paket (module).
-- **Object:** hasil _instansiasi_/turunan dari suatu class.\
-  Dalam kode program, Class harus diimplementasikan menjadi sebuah objek, karena class tidak bisa langsung digunakan. Objek disebut juga dengan instance dari suatu class.
+## 5. Perbandingan Paradigma
 
-- **Attribute/Property:** Atribut adalah data yang membedakan antara objek satu dengan yang lainnya.\
-  Atribut dibedakan menjadi dua jenis yaitu _Instance Variable_ dan _Class Variable_.
-  _Instance Variable_ adalah atribut untuk tiap objek yang kelasnya sama.
-  _Class Variable_ adalah atribut untuk semua objek yang dibuat dari class yang sama.
+|Paradigma|Fokus|Cara Berpikir|Contoh Bahasa|
+|---|---|---|---|
+|Prosedural|Langkah-langkah|Urutan instruksi|C, Pascal|
+|Berorientasi Objek|Objek|Interaksi objek|Java, C++, Python|
+|Fungsional|Fungsi|Transformasi fungsi|Haskell, Lisp|
+|Deklaratif|Hasil|Menyatakan tujuan|SQL, Prolog|
 
-- **Method/Function/Procedure:** serangkaian kode program dalam suatu _class_ yang melakukan tugas tertentu.\
-  Kode program dalam _method_ biasanya bertugas mengekseksi perintah tertentu, memodifikasi atau mengambil nilai pada atribut. Method juga digunakan untuk objek berkomunikasi dengan objek yang lain. 
-  
-- **Parameter:** Memanggil method bisa juga disertai dengan parameter.
-  Parameter adalah nilai yang diberikan kepada suatu fungsi atau metode ketika dipanggil. Parameter digunakan untuk memberikan informasi yang diperlukan untuk menjalankan fungsi atau metode tersebut.
+---
 
-> 💡 Check [Latihan 1](latihan/latihan-01.md)
+## 6. Paradigma vs Bahasa Pemrograman
 
+Hal penting yang perlu dipahami mahasiswa:
 
+> **Paradigma ≠ Bahasa Pemrograman**
 
-## Referensi
+Satu bahasa pemrograman dapat mendukung **lebih dari satu paradigma**.
 
-**PPTX**
-- https://ndoware.com/paradigma-pemrograman.html
-- https://www.scaler.com/topics/oops-advantages/
+Contoh:
+
+- Python, mendukung:
+    - OOP
+    - Prosedural
+    - Fungsional
+- Java, mendukung:
+    - OOP
+    - sebagian paradigma fungsional
+
+Ini disebut **multi-paradigm programming language**.
+
+---
+
+## 7. Mengapa Paradigma Pemrograman Penting?
+
+Memahami paradigma pemrograman membantu programmer:
+1. Menyelesaikan masalah dengan pendekatan yang tepat
+2. Menghasilkan kode yang lebih terstruktur
+3. Mengurangi kompleksitas sistem
+4. Mempermudah pemeliharaan program
+5. Memilih bahasa pemrograman yang sesuai

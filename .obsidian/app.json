@@ -1,5 +1,6 @@
 {
-  "useMarkdownLinks": true,
+  "spellcheck": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "./images"
+  "attachmentFolderPath": "./images",
+  "useMarkdownLinks": true
 }
