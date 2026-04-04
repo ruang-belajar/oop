@@ -6,8 +6,9 @@
 - Latihan
   - Check [Latihan 1](latihan/latihan-01.md)
 - Tugas:
-  - Download & install [JDK 23](https://www.oracle.com/id/java/technologies/downloads/#jdk23-windows)
-  - Download & install [Netbeans 25](https://dlcdn.apache.org/netbeans/netbeans-installers/25/Apache-NetBeans-25-bin-windows-x64.exe)  
+  - Download & install [JDK 21](https://www.oracle.com/id/java/technologies/downloads/#jdk21-windows)
+  - Download & install [Visual Studio Code](https://code.visualstudio.com/download)
+		- [Extension Pack for Java](marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
   - Buat akun [Github](https://github.com)
   - Download & Install [Github Desktop](https://desktop.github.com)
 
