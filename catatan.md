@@ -13,6 +13,8 @@
   - Download & Install [Github Desktop](https://desktop.github.com)
 
 ## Pertemuan 2
+- Review Scratch:
+	- Contoh Scratch: [Spaceship 1](https://scratch.mit.edu/projects/1299234602)
 - [Review Java](https://github.com/ruang-belajar/java/)
   - Materi umum:
     - Variabel
