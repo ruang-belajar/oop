@@ -28,15 +28,19 @@
     - Java adalah bahasa pemrograman yang _case sensitive_
     - Perhatikan aturan penulisan nama variabel (_naming convension_)
     - Nama _class_ selalu sama dengan nama file
-    - nama _package_ harus sama dengan _nama folder_    
-  - [IF](https://github.com/ruang-belajar/java/blob/main/docs/07-pengambilan-keputusan.md)
-  - [Looping](https://github.com/ruang-belajar/java/blob/main/docs/08-pengulangan.md)
 - [Membuat Class](02-membuat-class.md)
-- Kerjakan [Latihan 7](latihan/latihan-07.md)
-- Tugas: Buat _class_ `Lingkaran`.
-  - Class ini memiliki property `radius`
-  - Class ini memiliki method `luas()` untuk menghitung luas
-  - Class ini memiliki method `keliling()` untuk menghitung luas
-  - Class ini memiliki method `diameter()` untuk menghitung diameter
-  - Class ini memiliki method `perbesar(n)` untuk memperbesar `radius` sebanyak `n` kali
+	- Method & Property
+- Latihan: GameTebakAngka
+	- GameTebakAngka dengan paradigma imperatif
+	- GameTebakAngka dengan implementasi OOP
+
+
+## Pertemuan 3
+- Review membuat class
+- [4 Pilar OOP](03-4-pilar.md)
+	- [Encapsulation](03-encapsulation.md)
+- GameTebakAngka dengan implementasi prinsip *Encapsulation*.
+- Latihan:
+	- Buat class `Lingkaran`
+	- Tentukan dan buat properti dan method
 
