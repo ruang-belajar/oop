@@ -1,4 +1,4 @@
-![[images/4-pillars.png]]
+![](images/4-pillars.png)
 # 4 Prinsip OOP
 Ada 4 Prinsip Utama dalam Pemrograman Berorientasi Objek (OOP):
 1. [Inheritance](03-inheritance.md)
