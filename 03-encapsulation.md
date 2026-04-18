@@ -197,6 +197,7 @@ public class Main {
 
 
 ### Contoh class `Orang`
+📃 `Orang.java`
 
 ```java
 class Orang {
@@ -237,8 +238,12 @@ class Orang {
     }
 
 }
+```
 
-public class Main {
+📃 `LatihanOrang1.java`
+
+```java
+public class LatihanOrang1 {
     public static void main(String[] args) {
         Orang orang1 = new Orang("Budi", "Rahman", "L");
         System.out.println(orang1.getTitel()+" "+orang1.namaLengkap());
@@ -309,43 +314,3 @@ getSaldo()
 setSaldo()
 ```
 
----
-
-# 10. Kesimpulan
-
-Encapsulation adalah konsep penting dalam OOP yang bertujuan untuk:
-
-- Membungkus **data dan metode dalam class**
-    
-- Menyembunyikan **detail implementasi**
-    
-- Mengontrol **akses terhadap data**
-    
-
-Dengan encapsulation, program menjadi:
-
-- lebih **aman**
-    
-- lebih **terstruktur**
-    
-- lebih **mudah dikembangkan**
-    
-
----
-
-## Latihan
-
-1. Buatlah class **RekeningBank** dengan atribut:
-    - `nomorRekening`
-    - `namaPemilik`
-    - `saldo`
-        
-2. Terapkan **encapsulation** dengan aturan:
-    - semua atribut **private**
-    - buat **getter dan setter**
-    - saldo tidak boleh bernilai negatif
-        
-3. Buat program untuk:
-    - menambah `saldo`
-    - menampilkan `saldo`
-        
