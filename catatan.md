@@ -40,7 +40,23 @@
 - [4 Pilar OOP](03-4-pilar.md)
 	- [Encapsulation](03-encapsulation.md)
 - GameTebakAngka dengan implementasi prinsip *Encapsulation*.
+- Intro: Constructor
 - Latihan:
 	- Buat class `Lingkaran`
 	- Tentukan dan buat properti dan method
+
+## Pertemuan 4
+* Review Encapsulation
+* Review: Constructor
+	* `super()`
+* 4 Pilar OOP: `inheritance`
+* Latihan:
+	* Buat class `Orang`
+		* constructor `Orang(namaDepan, namaBelakang)`
+		* property: `namaDepan`, `namaBelakang`
+	* Buat class `OrangSunda` turunan dari `Orang`
+		* method: `namaPanggilan()`
+	* Buat class `OrangJawa` turunan dari `Orang`
+		* method: `namaPanggilan()`
+
 
