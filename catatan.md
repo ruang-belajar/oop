@@ -34,11 +34,9 @@
 	- GameTebakAngka dengan paradigma imperatif
 	- GameTebakAngka dengan implementasi OOP
 
-
 ## Pertemuan 3
 - Review membuat class
-- [4 Pilar OOP](03-4-pilar.md)
-	- [Encapsulation](03-encapsulation.md)
+- [4 Pilar OOP](03-4-pilar.md): [Encapsulation](03-encapsulation.md)
 - GameTebakAngka dengan implementasi prinsip *Encapsulation*.
 - Intro: Constructor
 - Latihan:
@@ -49,14 +47,33 @@
 * Review Encapsulation
 * Review: Constructor
 	* `super()`
-* 4 Pilar OOP: `inheritance`
+* 4 Pilar OOP: [Inheritance](03-inheritance.md)
 * Latihan:
 	* Buat class `Orang`
 		* constructor `Orang(namaDepan, namaBelakang)`
-		* property: `namaDepan`, `namaBelakang`
+			* konversi `namaDepan` dan `namaBelakang` menjadi huruf kapital
+		* property private: `namaDepan`, `namaBelakang`
+		* method public: `getNamaDepan()`, `getNamaBelakang()`
+	* Buat class `LatihanOrang` untuk menguji class `Orang`
 	* Buat class `OrangSunda` turunan dari `Orang`
-		* method: `namaPanggilan()`
+		* method `namaPanggilan()`, contoh output:
+			* `Aa Budi`
+			* `Aa Asep`
 	* Buat class `OrangJawa` turunan dari `Orang`
-		* method: `namaPanggilan()`
-
+		* constructor `OrangJawa(namaDepan, namaBelakang, jenisKelamin)`		* 
+		* method `namaPanggilan()`, contoh output:
+			* `Mba Yanti`
+			* `Mas Mono`
+* **Tugas:**
+	* Buat class `SuperHero` yang merupakan turunan dari `Orang`
+		* Tambahkan property `alias`
+		* `SuperHero` memiliki konstruktor `SuperHero(namaDepan, namaBelakang, alias)`
+		* Buat method `namaPanggilan()` dengan contoh output sebagai berikut:
+			* `Bruce "Batman" Wayne`
+			* `Clark "Superman" Kent`
+			* `Diana "Wonder Woman" Prince`
+		* Buat class `LatihanSuperHero` untuk menguji class `SuperHero()`
+	* Buat class `Celsius`
+		* method `fahrenheit()`, `kelvin()`, `reamur()`
+		* Buat class `LatihanCelsius` untuk menguji class `Celsius()`
 
