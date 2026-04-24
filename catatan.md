@@ -49,7 +49,7 @@
 	* `super()`
 * 4 Pilar OOP: [Inheritance](03-inheritance.md)
 * Latihan:
-	* Buat class `Orang`
+	* Buat class `Orang` 
 		* constructor `Orang(namaDepan, namaBelakang)`
 			* konversi `namaDepan` dan `namaBelakang` menjadi huruf kapital
 		* property private: `namaDepan`, `namaBelakang`
@@ -65,15 +65,15 @@
 			* `Mba Yanti`
 			* `Mas Mono`
 * **Tugas:**
-	* Buat class `SuperHero` yang merupakan turunan dari `Orang`
+	* Buat class `SuperHero` (file 💼 `SuperHero.java`) yang merupakan turunan dari `Orang`
 		* Tambahkan property `alias`
 		* `SuperHero` memiliki konstruktor `SuperHero(namaDepan, namaBelakang, alias)`
 		* Buat method `namaPanggilan()` dengan contoh output sebagai berikut:
 			* `Bruce "Batman" Wayne`
 			* `Clark "Superman" Kent`
 			* `Diana "Wonder Woman" Prince`
-		* Buat class `LatihanSuperHero` untuk menguji class `SuperHero()`
-	* Buat class `Celsius`
+		* Buat class `LatihanSuperHero` (file 💼 `LatihanSuperHero.java`) untuk menguji class `SuperHero()`
+	* Buat class `Celsius` (file 💼  `Celcius.java`)
 		* method `fahrenheit()`, `kelvin()`, `reamur()`
-		* Buat class `LatihanCelsius` untuk menguji class `Celsius()`
+		* Buat class `LatihanCelsius` (file 💼  `LatihanCelcius.java`) untuk menguji class `Celsius()`
 
