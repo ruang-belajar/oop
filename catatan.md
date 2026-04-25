@@ -74,6 +74,7 @@
 			* `Diana "Wonder Woman" Prince`
 		* Buat class `LatihanSuperHero` (file 💼 `LatihanSuperHero.java`) untuk menguji class `SuperHero()`
 	* Buat class `Celsius` (file 💼  `Celcius.java`)
+		* `Celcius` memiliki konstruktor `Celcius(suhu)`
 		* method `fahrenheit()`, `kelvin()`, `reamur()`
 		* Buat class `LatihanCelsius` (file 💼  `LatihanCelcius.java`) untuk menguji class `Celsius()`
 
