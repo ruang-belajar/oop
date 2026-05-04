@@ -78,3 +78,7 @@
 		* method `fahrenheit()`, `kelvin()`, `reamur()`
 		* Buat class `LatihanCelsius` (file 💼  `LatihanCelcius.java`) untuk menguji class `Celsius()`
 
+## Pertemuan 5
+
+* Review Encapsulation & Inheritance
+* Pelajari file [LatihanMenu0.java](latihan/src/LatihanMenu0.java) , [Menu.java](latihan/src/Menu.java), [LatihanMenu1.java](latihan/src/LatihanMenu1.java)
