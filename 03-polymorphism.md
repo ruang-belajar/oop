@@ -6,42 +6,35 @@
 **Polymorphism** berasal dari bahasa Yunani:
 
 - **Poly** = banyak
-    
 - **Morphe** = bentuk
-    
 
 Dalam **Object Oriented Programming (OOP)**, **polymorphism** adalah kemampuan suatu **method atau objek untuk memiliki banyak bentuk atau perilaku yang berbeda** tergantung pada konteks pemanggilannya.
 
 Secara sederhana:
 
-> **Polymorphism memungkinkan satu interface digunakan untuk berbagai implementasi.**
+> **Polymorphism memungkinkan satu interface digunakan untuk berbagai implementasi.** Dengan cara ini kita akan mengurangi duplikasi kode, kode lebih ringka dan flexible.
 
 Contoh sederhana dalam kehidupan sehari-hari:
 
-Objek **"kendaraan"** memiliki perilaku **bergerak**, tetapi cara bergeraknya berbeda.
+Objek **"kendaraan"** memiliki perilaku **maju**, tetapi cara bergeraknya berbeda.
 
-|Objek|Cara Bergerak|
-|---|---|
-|Mobil|Menggunakan roda|
-|Pesawat|Terbang|
-|Kapal|Berlayar|
+| Objek   | Cara Bergerak    |
+| ------- | ---------------- |
+| Mobil   | Menggunakan roda |
+| Pesawat | Terbang          |
+| Kapal   | Berlayar         |
 
-Meskipun sama-sama menggunakan fungsi **bergerak()**, implementasinya berbeda.
+Meskipun sama-sama menggunakan fungsi **maju()**, implementasinya berbeda.
 
 ---
 
 ## 2. Tujuan Polymorphism
 
 Polymorphism digunakan untuk:
-
 1. **Meningkatkan fleksibilitas program**
-    
 2. **Mengurangi kompleksitas kode**
-    
 3. **Mempermudah pengembangan dan pemeliharaan software**
-    
 4. **Mendukung prinsip OOP seperti inheritance dan abstraction**
-    
 
 Dengan polymorphism, kita dapat menulis kode yang **lebih umum dan reusable**.
 
@@ -51,22 +44,9 @@ Dengan polymorphism, kita dapat menulis kode yang **lebih umum dan reusable**.
 
 Secara umum polymorphism dibagi menjadi dua jenis utama:
 
-### 1. Compile Time Polymorphism
+### 3.1. Compile Time Polymorphism (_Static Polymorphism_)
 
-(disebut juga **Static Polymorphism**)
-
-Polymorphism yang terjadi **saat proses kompilasi**.
-
-Biasanya menggunakan:
-
-- **Method Overloading**
-    
-- **Operator Overloading**
-    
-
-#### Method Overloading
-
-Method memiliki **nama yang sama tetapi parameter berbeda**.
+Compile Time Polymorphism adalah polymorphism yang terjadi **saat proses kompilasi**. Polimorphism ini dilakukan dengan membuat method dengan nama yang sama tapi parameter yang berbeda.
 
 Contoh (Java):
 
@@ -101,68 +81,44 @@ Walaupun methodnya sama (**tambah**), bentuknya berbeda.
 
 ---
 
-### 2. Runtime Polymorphism
+### 3.2. Runtime Polymorphism (_Dynamic Polymorphism_)
 
-(disebut juga **Dynamic Polymorphism**)
-
-Polymorphism yang terjadi **saat program dijalankan**.
-
-Biasanya menggunakan:
-
-- **Method Overriding**
-    
-- **Inheritance**
-    
+Runtime Polymorphism adalah polymorphism yang terjadi **saat program dijalankan**. Biasanya menggunakan **Method Overriding** atau **Inheritance**
 
 Subclass **mengganti implementasi method dari superclass**.
 
----
+Contoh: 
 
-## 4. Method Overriding
-
-**Method overriding** terjadi ketika **subclass mendefinisikan ulang method dari superclass** dengan nama yang sama.
-
-Contoh (Java):
-
-### Superclass
+**Superclass**
 
 ```java
 class Hewan {
-
     void suara() {
         System.out.println("Hewan mengeluarkan suara");
     }
-
 }
 ```
 
-### Subclass
-
+**Subclass**
 ```java
 class Kucing extends Hewan {
-
+    @Override
     void suara() {
         System.out.println("Kucing mengeong");
     }
-
 }
-```
 
-```java
 class Anjing extends Hewan {
-
+    @Override
     void suara() {
         System.out.println("Anjing menggonggong");
     }
-
 }
 ```
 
-### Program Utama
-
+**Program Utama**
 ```java
 public class Main {
-
     public static void main(String[] args) {
 
         Hewan h1 = new Kucing();
@@ -171,74 +127,20 @@ public class Main {
         h1.suara();
         h2.suara();
     }
-
 }
 ```
 
-Output:
-
+**Output**
 ```
 Kucing mengeong
 Anjing menggonggong
 ```
 
-Walaupun tipe variabelnya **Hewan**, perilaku methodnya berbeda.
-
-Inilah **runtime polymorphism**.
+Contoh dari *runtime polymorphism* Anda bisa perhatikan di program utama, objek `h1` di deklarasikan sebagai `Hewan` tapi kepadanya direferensikan class `Kucing`. Method yang dijalankan ketika `h1.suara()` dipanggil adalah  `suara()` dari class `Kucing`.
 
 ---
 
-## 5. Diagram Konsep Polymorphism
-
-Struktur hubungan class:
-
-```
-        Hewan
-          |
-   ----------------
-   |              |
- Kucing         Anjing
-   |              |
-suara()        suara()
-```
-
-Method **suara()** memiliki banyak bentuk implementasi.
-
----
-
-## 6. Keuntungan Polymorphism
-
-Beberapa keuntungan polymorphism dalam pengembangan perangkat lunak:
-
-### 1. Kode Lebih Fleksibel
-
-Program dapat menggunakan **satu interface untuk berbagai objek**.
-
-### 2. Reusability Tinggi
-
-Method yang sama dapat digunakan oleh berbagai class.
-
-### 3. Mudah Dikembangkan
-
-Jika ada class baru, tidak perlu mengubah kode lama.
-
-Contoh:
-
-Tambahkan class baru:
-
-```
-class Burung extends Hewan
-```
-
-Tanpa mengubah program utama.
-
-### 4. Mengurangi Duplikasi Kode
-
-Program lebih **ringkas dan modular**.
-
----
-
-## 7. Contoh Kasus Polymorphism
+## 4. Contoh Kasus Polymorphism
 
 Misalkan kita membuat sistem **perhitungan luas bangun datar**.
 
@@ -274,7 +176,7 @@ Namun semuanya menggunakan method yang sama: **hitungLuas()**.
 
 ---
 
-## 8. Perbandingan Overloading vs Overriding
+## 5. Perbandingan Overloading vs Overriding
 
 |Aspek|Overloading|Overriding|
 |---|---|---|
@@ -286,7 +188,7 @@ Namun semuanya menggunakan method yang sama: **hitungLuas()**.
 
 ---
 
-## 9. Perbandingan dengan Overriding dalam Konteks Inheritance
+## 6. Perbandingan dengan Overriding dalam Konteks Inheritance
 
 _Overriding_ muncul pada pembahasan _inheritance_ dan _polymorphism_ karena ia menjadi **jembatan antara inheritance dan polymorphism**.
 
@@ -295,7 +197,7 @@ Dengan kata lain:
 - **Inheritance adalah struktur pewarisan**
 - **Polymorphism adalah perilaku dinamis yang memanfaatkan overriding**
 
-### 9.1. Overriding dalam Konteks Inheritance
+### 6.1. Overriding dalam Konteks Inheritance
 
 Pada **inheritance**, overriding dijelaskan sebagai:
 
@@ -328,7 +230,7 @@ Fokus pembahasannya adalah **pewarisan dan perubahan method**.
 
 ---
 
-### 9.2. Overriding dalam Konteks Polymorphism
+### 6.2. Overriding dalam Konteks Polymorphism
 
 Pada **polymorphism**, overriding dijelaskan sebagai:
 
@@ -362,7 +264,7 @@ Penjelasan pada polymorphism:
 
 Ini disebut **runtime polymorphism** atau **dynamic binding**.
 
-### 9.3. Perbedaan Fokus Penjelasan
+### 6.3. Perbedaan Fokus Penjelasan
 
 |Aspek|Inheritance|Polymorphism|
 |---|---|---|
@@ -380,7 +282,7 @@ Polymorphism → memanfaatkan overriding
 
 ---
 
-# 4. Analogi Sederhana
+## 7. Polymorphism vs Inheritance
 
 Misalkan ada class **Hewan** dengan method `suara()`.
 

@@ -44,8 +44,8 @@
 	- Tentukan dan buat properti dan method
 
 ## Pertemuan 4
-* Review Encapsulation
-* Review: Constructor
+* Review *Encapsulation*
+* Review: *Constructor*
 	* `super()`
 * 4 Pilar OOP: [Inheritance](03-inheritance.md)
 * Latihan:
@@ -78,3 +78,10 @@
 		* method `fahrenheit()`, `kelvin()`, `reamur()`
 		* Buat class `LatihanCelsius` (file 💼  `LatihanCelcius.java`) untuk menguji class `Celsius()`
 
+## Pertemuan 5 (🤔)
+
+
+## Pertemuan 6
+
+- Review tugas
+- 4 Pilar OOP: [Polimorphism](03-polymorphism.md)
