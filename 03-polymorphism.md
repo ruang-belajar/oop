@@ -121,9 +121,11 @@ class Anjing extends Hewan {
 public class Main {
     public static void main(String[] args) {
 
+		Hewan h0 = new Hewan();
         Hewan h1 = new Kucing();
         Hewan h2 = new Anjing();
 
+		h0.suara();
         h1.suara();
         h2.suara();
     }
@@ -132,6 +134,7 @@ public class Main {
 
 **Output**
 ```
+Hewan mengeluarkan suara
 Kucing mengeong
 Anjing menggonggong
 ```
