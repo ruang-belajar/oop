@@ -23,14 +23,20 @@ public class LatihanVillain1 {
             command = scanner.nextLine();
 
             if(command.equals("1")) {
+                System.out.print("Nama Depan:");
                 namaDepan = scanner.nextLine();
+                System.out.print("Nama Belakang:");
                 namaBelakang = scanner.nextLine();
+                System.out.print("Alias:");
                 alias = scanner.nextLine();
                 player = new SuperHero(namaDepan, namaBelakang, alias);
             }
             if(command.equals("2")) {
+                System.out.print("Nama Depan:");
                 namaDepan = scanner.nextLine();
+                System.out.print("Nama Belakang:");
                 namaBelakang = scanner.nextLine();
+                System.out.print("Alias:");
                 alias = scanner.nextLine();
                 player = new Villain(namaDepan, namaBelakang, alias);
             }
