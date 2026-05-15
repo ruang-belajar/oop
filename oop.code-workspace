@@ -8,6 +8,9 @@
         },
         {
             "path": "../artikel"
+        },
+        {
+            "path": "../../latihan-java"
         }
     ],
 	"settings": {

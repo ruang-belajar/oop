@@ -19,7 +19,7 @@ Beberapa tujuan utama dari abstraksi dalam pemrograman berorientasi objek adalah
 
 ### 1️⃣ Mengurangi Kompleksitas Sistem
 
-Sistem perangkat lunak seringkali sangat kompleks. Abstraction membantu programmer bekerja dengan **model yang lebih sederhana**.
+Sistem perangkat lunak seringkali sangat kompleks. *Abstraction* membantu programmer bekerja dengan **model yang lebih sederhana**.
 
 Contoh: \
 Pengguna mobil hanya perlu tahu:
@@ -106,13 +106,9 @@ Dalam OOP, abstraksi biasanya direalisasikan melalui:
 **Abstract Class** adalah kelas yang **tidak dapat dibuat objeknya secara langsung** dan biasanya digunakan sebagai **kelas dasar (base class)**.
 
 Abstract class dapat memiliki:
-
 - method abstrak
-    
 - method biasa
-    
 - atribut
-    
 
 #### Karakteristik Abstract Class
 - Tidak dapat diinstansiasi
@@ -121,7 +117,19 @@ Abstract class dapat memiliki:
 
 ---
 
-#### Contoh (Java)
+#### Abstract Method
+
+**Abstract Method** adalah method yang **tidak memiliki implementasi** pada kelas induk.
+
+Contoh:
+
+```java
+abstract void makeSound();
+```
+
+Implementasi method tersebut **harus dibuat pada subclass**.
+
+#### Contoh Penggunaan Abstract
 
 ```java
 abstract class Animal {
@@ -139,6 +147,7 @@ Class turunan:
 ```java
 class Dog extends Animal {
 
+	@Override
     void makeSound() {
         System.out.println("Dog barks");
     }
@@ -154,19 +163,8 @@ d.makeSound();
 d.sleep();
 ```
 
----
-
-#### Abstract Method
-
-**Abstract Method** adalah method yang **tidak memiliki implementasi** pada kelas induk.
-
-Contoh:
-
-```java
-abstract void makeSound();
-```
-
-Implementasi method tersebut **harus dibuat pada subclass**.
+> 💡 Penggunaan `@Override` pada implementasi _abstract method_ adalah tidak wajib tapi merupakan *best-practice*. Dengan menggunakan `@Override` maka compiler akan memberikan peringatan kesalahan jika terjadi _typo_ ketika implementasi _abstract method_.\
+> Contoh: jika di class `Dog`, `makeSound()` ditulis jadi `makesound()`
 
 ---
 
@@ -176,9 +174,7 @@ Implementasi method tersebut **harus dibuat pada subclass**.
 
 Interface hanya mendefinisikan **perilaku (behavior)** tanpa implementasi.
 
----
-
-#### Contoh Interface (Java)
+#### Contoh Penggunaan Interface
 
 ```java
 interface Vehicle {
@@ -219,111 +215,93 @@ class Car implements Vehicle {
 
 ---
 
-## 6. Hubungan Abstraction dengan Encapsulation
+## 6. Contoh Penggunaan Abstract & Interface
 
-Baik *encapsulation* maupun *abstraction* sama-sama *menyembunyikan sesuatu*. Secara spesifik, berikut perbedaan antara *abstraction* dengan *encapsulation*.
-
-|Aspek|Encapsulation|Abstraction|
-|---|---|---|
-|**Pengertian**|Teknik untuk **membungkus data dan method dalam satu class serta membatasi akses terhadap data tersebut**|Konsep untuk **menyembunyikan kompleksitas implementasi dan hanya menampilkan fungsi penting kepada pengguna**|
-|**Fokus utama**|**Perlindungan data (data hiding)**|**Penyederhanaan kompleksitas sistem**|
-|**Apa yang disembunyikan**|**Data internal (atribut/variabel)**|**Detail implementasi atau cara kerja sistem**|
-|**Tujuan**|Mengontrol akses terhadap data agar tidak dimodifikasi sembarangan|Menyederhanakan penggunaan sistem dengan menampilkan fungsi penting saja|
-|**Cara implementasi**|Menggunakan **access modifier** seperti `private`, `protected`, `public`|Menggunakan **abstract class** dan **interface**|
-|**Komponen utama**|Field (atribut) + method pengakses (getter/setter)|Method abstrak yang harus diimplementasikan oleh subclass|
-|**Tingkat penerapan**|Level **class dan atribut**|Level **desain sistem dan struktur class**|
-|**Contoh dalam kode**|Variabel dibuat `private` dan diakses melalui `getter/setter`|Mendefinisikan method tanpa implementasi pada `abstract class` atau `interface`|
-|**Analogi kehidupan nyata**|**Kapsul obat**: isi di dalam kapsul tidak terlihat langsung|**ATM**: pengguna hanya melihat menu tanpa mengetahui proses internal|
-|**Hubungan dengan konsep OOP lain**|Mendukung **data security** dalam objek|Mendukung **polymorphism dan inheritance**|
-
-### Contoh Singkat dalam Kode
-
-**Encapsulation**
-
+**AbstractOrang.java**
 ```java
-class BankAccount {
+abstract class AbstractOrang {
+    private String namaDepan;
+    private String namaBelakang;
 
-    private double balance;
-
-    public double getBalance() {
-        return balance;
+    public AbstractOrang(String namaDepan, String namaBelakang) {
+        this.namaDepan = namaDepan;
+        this.namaBelakang = namaBelakang;
     }
 
-    public void deposit(double amount) {
-        balance += amount;
+    public String namaLengkap() {
+        return this.namaDepan + " " + this.namaBelakang;
     }
 
+    public String getNamaDepan() {
+        return this.namaDepan;
+    }
+
+    public String getNamaBelakang() {
+        return this.namaBelakang;
+    }
+
+    abstract public String getNamaPanggilan();
 }
 ```
 
-Di sini:
-- `balance` **disembunyikan**
-- hanya bisa diakses melalui method.
-
----
-
-**Abstraction**
-
+**Penyanyi.java**
 ```java
-abstract class Vehicle {
-
-    abstract void start();
-
+interface Penyanyi {
+    void bernyanyi();
 }
 ```
 
-Subclass:
-
+**Penari.java**
 ```java
-class Car extends Vehicle {
+public interface Penari {
+    void menari();
+}
+```
 
-    void start() {
-        System.out.println("Car engine started");
+**OrangPadang.java**
+```java
+/* OrangPadang adalah turunan dari AbstractOrang, dengan mengimplementasikan interface Penyanyi dan Penari */
+public class OrangPadang extends AbstractOrang implements Penyanyi,Penari{
+
+    public OrangPadang(String namaDepan, String namaBelakang) {
+        super(namaDepan, namaBelakang);
     }
 
-}
-```
-
-Di sini:
-- class hanya mendefinisikan **apa yang harus dilakukan**
-- implementasi diberikan oleh subclass.
-
----
-
-## 7. Contoh Studi Kasus Encapsulation
-
-### Sistem Pembayaran
-
-Abstraction dapat digunakan untuk berbagai metode pembayaran.
-
-Abstract class:
-
-```java
-abstract class Payment {
-
-    abstract void pay(double amount);
-
-}
-```
-
-Subclass:
-
-```java
-class CreditCardPayment extends Payment {
-
-    void pay(double amount) {
-        System.out.println("Paid using credit card: " + amount);
+	/* deklarasi method getNamaPanggilan yang diwajibkan AbstractOrang */
+	@Override
+    public String getNamaPanggilan() {
+        return "Uda "+this.getNamaDepan();
     }
 
-}
-
-class EWalletPayment extends Payment {
-
-    void pay(double amount) {
-        System.out.println("Paid using e-wallet: " + amount);
+	/* implementasi method bernyayi dari interface Penyanyi */
+    public void bernyanyi() {
+        System.out.println("Nyanyi");
     }
 
+	/* implementasi method menari dari interface Penari */
+    public void menari() {
+        System.out.println("Joget");
+    }
+    
 }
 ```
 
+**LatihanOrangPadang.java**
+```java
+public class LatihanOrangPadang {
+    public static void main(String[] args) {
+        OrangPadang orang1 = new OrangPadang("Budi", "Raharjo");
+        
+        /* OrangPadang bisa buat ke objek AbstractOrang karena OrangPadang adalah turunan dari AbstractOrang */
+        AbstractOrang orang2 = new OrangPadang("Firzah", "Kirai");
 
+        System.out.println(orang1.getNamaPanggilan());
+        orang1.bernyanyi();
+
+        System.out.println(orang2.getNamaBelakang());
+        
+        /* Karena orang2 dideklarasikan sebagai AbstractOrang (yang tidak mengenal method menari(), maka harus dilakukan 'type casting' ke OrangParang agar orang2 bisa mengenali method menari() ) */
+        ((OrangPadang) orang2).menari();
+    }
+}
+```

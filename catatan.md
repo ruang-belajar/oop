@@ -85,3 +85,8 @@
 
 - Review tugas
 - 4 Pilar OOP: [Polimorphism](03-polymorphism.md)
+
+## Pertemuan 7
+
+- Review Polimorphism & Inheritance
+- 4 Pilar OOP: [Abstraction](03-abstraction.md)
