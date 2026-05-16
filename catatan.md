@@ -88,5 +88,7 @@
 
 ## Pertemuan 7
 
-- Review Polimorphism & Inheritance
+- Review [Polimorphism](03-polymorphism.md) & [Inheritance](03-inheritance.md)
 - 4 Pilar OOP: [Abstraction](03-abstraction.md)
+- [Simulasi UTS](https://docs.google.com/forms/d/e/1FAIpQLSco9hkcFV78rdCKJF8MencuiiBPnjOrHIAqoMXdRy1hw60-oA/viewform?usp=header)
+	- Bahas [SuperHero.java](latihan/src/SuperHero.java)
