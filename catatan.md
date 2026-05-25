@@ -93,3 +93,14 @@
 	- [latihan/abstraction/](latihan/abstraction/)
 - [Simulasi UTS](https://docs.google.com/forms/d/e/1FAIpQLSco9hkcFV78rdCKJF8MencuiiBPnjOrHIAqoMXdRy1hw60-oA/viewform?usp=header)
 	- Bahas [SuperHero.java](latihan/src/SuperHero.java)
+
+---
+
+## UTS
+
+---
+
+## Pertemuan 8
+
+* Review
+* UML
