@@ -176,11 +176,11 @@
     - class `Users` adalah class abstract, ia tidak bisa dibuat sebagai object, tapi ia bisa diturunkan menjadi class lain. Class turunannya lah yang akan dibuat menjadi objek.
     - class abstract memberikan kerangka bagi _programmer lain_ jikalau mau membuat class tertentu, ia harus mengikuti kerangka yang disediakan oleh class abstract ini.
 - prep class `UsersDosen`
-- prep database `kelas` & `peserta` (lihat [sikampus1.ms](latihan/sikampus1.md))
+- prep database `kelas` & `peserta` (lihat [sikampus1.md](latihan/sikampus1.md))
 - Class `Kelas`
 - Class `Peserta`
 - Tugas:
-  - check [sikampus1.ms](latihan/sikampus1.md)
+  - check [sikampus1.md](latihan/sikampus1.md)
   - Lengkapi `Peserta` dengan fungsi: `baca()`, `update`, `getErrMsg()`, `tambah()`
   - Buat class `Kelas` dengan fungsi: `tambah()`, `update()`, `getErrMsg()`, `baca()`
   - Siapkan database
