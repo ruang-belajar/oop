@@ -30,6 +30,8 @@ Berikut adalah penjelasan rinci mengenai jenis-jenis Structure Diagrams yang pal
 
 Seperti yang sudah kita bahas, ini adalah diagram paling fundamental dalam UML. Class Diagram mendefinisikan tipe objek (kelas) dalam sistem beserta atribut, operasi (metode), dan hubungan antar kelas (seperti pewarisan atau agregasi). Ini adalah cetak biru utama sebelum mulai menulis kode.
 
+![](images/06-uml-4.png)
+
 #### 2. Object Diagram (Diagram Objek)
 
 Jika Class Diagram adalah cetak biru, maka Object Diagram adalah **foto polaroid (snapshot)** dari sistem pada satu waktu tertentu.
@@ -88,13 +90,10 @@ Berikut adalah penjelasan rinci tentang jenis-jenis Behavior Diagrams yang palin
 Ini adalah diagram yang paling mudah dipahami oleh orang non-teknis (seperti klien atau analis bisnis) karena tidak menampilkan detail kode sama sekali.
 
 - **Fungsi:** Menggambarkan sistem dari sudut pandang interaksi antara pengguna (_Actor_) dan fitur-fitur yang disediakan oleh sistem tersebut (_Use Case_). Diagram ini menjawab pertanyaan: _"Siapa yang menggunakan sistem ini, dan apa yang bisa mereka lakukan?"_
-    
-- **Komponen Utama:** * Aktor (digambarkan seperti orang-orangan lidi) yang merepresentasikan peran pengguna.
-    
-    - _Use Case_ (berbentuk oval) yang merepresentasikan fungsi sistem (misal: "Login", "Cetak Laporan").
         
 - **Kapan Digunakan:** Pada fase awal analisis kebutuhan untuk menyepakati ruang lingkup (_scope_) aplikasi dengan klien, memetakan interaksi antara manusia dan fitur aplikasi secara umum.
-    
+
+![](images/06-uml-2.png)
 
 #### 2. Activity Diagram (Diagram Aktivitas)
 
