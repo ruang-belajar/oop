@@ -40,22 +40,16 @@ Sistem yang baik terdiri dari kelas-kelas yang saling berkolaborasi. Memahami re
 ![](06-uml-class-diagram-3.png)
 
 - **Generalization (Pewarisan/Inheritance):** Menunjukkan hubungan "is-a" antara _superclass_ dan _subclass_.
-    - **Notasi:** Garis solid dengan panah berbentuk segitiga kosong yang mengarah ke _superclass_.
         
 - **Realization (Implementasi):** Hubungan antara antarmuka (_interface_) yang mendefinisikan kontrak, dengan kelas yang mengimplementasikannya.
-    - **Notasi:** Garis putus-putus dengan panah segitiga kosong.
         
 - **Association (Asosiasi):** Asosiasi dapat diartikan sebagai hubungan antara dua class yang bersifat statis. Biasanya asosiasi menjelaskan class yang memiliki atribut tambahan seperti class lain.
-    - **Notasi:** Garis solid biasa (bisa ditambahkan tanda panah untuk _directed association_).
         
 - **Aggregation (Agregasi):** Hubungan "has-a" yang bersifat lemah. Hubungan antara dua class di mana salah satu class merupakan bagian dari class lain, tetapi dua class ini dapat berdiri masing-masing. Contoh: `Dosen` dan `Jurusan`.
-    - **Notasi:** Garis solid dengan belah ketupat (_diamond_) kosong di sisi kelas utama.
         
 - **Composition (Komposisi):** Hubungan "part-of" yang bersifat kuat. Siklus hidup objek bagian bergantung penuh pada objek utama. Jika kelas utama dihapus, kelas bagian juga ikut terhapus. Contoh: `Rumah` dan `Kamar`.
-    - **Notasi:** Garis solid dengan belah ketupat (_diamond_) hitam pekat.
         
 - **Dependency (Kebergantungan):** Hubungan di mana perubahan struktur pada satu kelas akan memengaruhi kelas lain yang menggunakannya (biasanya sebagai parameter metode).
-    - **Notasi:** Garis putus-putus dengan panah terbuka yang mengarah ke kelas yang diandalkan.
         
 
 

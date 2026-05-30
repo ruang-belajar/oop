@@ -34,12 +34,18 @@ Seperti yang sudah kita bahas, ini adalah diagram paling fundamental dalam UML. 
 
 #### 2. Object Diagram (Diagram Objek)
 
-Jika Class Diagram adalah cetak biru, maka Object Diagram adalah **foto polaroid (snapshot)** dari sistem pada satu waktu tertentu.
+Jika **Class Diagram** adalah sebuah "cetak biru" (_blueprint_) yang bersifat abstrak dan statis, maka **Object Diagram** adalah gambaran nyata (_instance_) dari Class Diagram tersebut pada satu titik waktu tertentu (_snapshot_).
+
+Object Diagram menunjukkan bagaimana objek-objek dalam sistem saling berhubungan dan apa nilai dari atributnya ketika sistem sedang berjalan.
 
 - **Fungsi:** Diagram ini menampilkan _instance_ (wujud nyata) dari kelas-kelas beserta nilai atributnya saat sistem sedang berjalan.
     
 - **Kapan digunakan:** Sangat berguna untuk menguji dan memvalidasi apakah Class Diagram yang dibuat sudah logis ketika diisi dengan data nyata yang kompleks.
-    
+
+![](images/06-uml-3.png)
+📚 Referensi: 
+- [LucidChart - Object Diagram Tutorial](https://www.lucidchart.com/pages/tutorial/uml-object-diagram)
+- [Geeks for Geeks - Object Diagram](https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-object-diagrams/)
 
 #### 3. Component Diagram (Diagram Komponen)
 
