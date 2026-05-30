@@ -34,10 +34,10 @@ Sistem yang baik terdiri dari kelas-kelas yang saling berkolaborasi. Memahami re
 
 **🎫 Contoh 1**
 
-![](10-uml-class-diagram-2.png)
+![](images/10-uml-class-diagram-2.png)
 
 **🎫 Contoh 2**
-![](06-uml-class-diagram-3.png)
+![](images/06-uml-class-diagram-3.png)
 
 - **Generalization (Pewarisan/Inheritance):** Menunjukkan hubungan "is-a" antara _superclass_ dan _subclass_.
         
