@@ -105,9 +105,9 @@
 * Review [4 Pilar OOP](03-4-pilar.md): [Encapsulation](03-encapsulation.md), [Inheritance](03-inheritance.md), [Polimorphism](03-polymorphism.md) & [Inheritance](03-inheritance.md)
 * [UML](06-uml.md)
 * [Class Diagram](06-uml-class-diagram.md)
-	* [Latihan UML: Model Java](latihan-13-uml-java-model.md)
+	* [Latihan UML: Model Java](latihan/latihan-13-uml-java-model.md)
 * Latihan:
 	* [Latihan UML: Model Laravel](latihan/latihan-13-uml-laravel-model.md)
-	* [Latihan 10: Class Diagram to Code](latihan-10.md). **Soal 1**
+	* [Latihan 10: Class Diagram to Code](latihan/latihan-10.md). **Soal 1**
 * **Tugas:**
-	* [Latihan 10: Class Diagram to Code](latihan-10.md). **Soal 2** (File: 💼 `Animal.java`, 💼 `Duck.java`, 💼 `Fish.java`, 💼 `Zebra.java`)
+	* [Latihan 10: Class Diagram to Code](latihan/latihan-10.md). **Soal 2** (File: 💼 `Animal.java`, 💼 `Duck.java`, 💼 `Fish.java`, 💼 `Zebra.java`)
