@@ -4,7 +4,7 @@ Class Diagram adalah jenis diagram struktur statis dalam UML yang menggambarkan 
 
 ## 2. Anatomi Dasar Sebuah Kelas
 
-![](10-uml-class-diagram-1.png)
+![](images/10-uml-class-diagram-1.png)
 
 Dalam notasi UML, sebuah kelas digambarkan menggunakan bentuk persegi panjang yang dibagi menjadi tiga kompartemen (baris) mendatar:
 
