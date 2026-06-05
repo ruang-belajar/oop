@@ -111,3 +111,23 @@
 	* [Latihan 10: Class Diagram to Code](latihan/latihan-10.md). **Soal 1**
 * **Tugas:**
 	* [Latihan 10: Class Diagram to Code](latihan/latihan-10.md). **Soal 2** (File: 💼 `Animal.java`, 💼 `Duck.java`, 💼 `Fish.java`, 💼 `Zebra.java`)
+
+## Pertemuan 9
+
+- Prep Netbeans
+- Pelajari tutorial berikut:
+	- [Kelas Tersembunyi - Tutorial GUI Java - Mengubah Nilai TextField Dan Jlabel Dengan Tombol](https://www.youtube.com/watch?v=28KrP9615DQ)
+	- [MDN Channel - hitung luas dan keliling persegi panjang menggunakan JFrame Netbeans](https://www.youtube.com/watch?v=2q8Xwh4Cu78)
+- **Tugas:** 
+	- 💼 folder: **Hallo1**
+		- form yang berisi TextBoxt, Label & Button
+		- Ketika Button di klik, maka pada TextBox dan Label muncul tulisan : "Halo"
+	- 💼 folder: **Persegi1**
+		- buat form untuk menghitung luas dan keliling persegi panjang.
+		- Ketika tombol "Hitung" diklik, maka *Luas* dan *Keliling* akan muncul.
+
+## Pertemuan 10
+
+- Prep database
+- Koneksi ke database
+- Membuat class `Mahasiswa`
