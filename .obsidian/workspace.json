@@ -22,35 +22,35 @@
             }
           },
           {
-            "id": "a3ecb8052c817c42",
+            "id": "e32665c030a5ef36",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-4-pilar.md",
+                "file": "latihan/latihan-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03-4-pilar"
+              "title": "latihan-08"
             }
           },
           {
-            "id": "c3e066931f34c9d3",
+            "id": "50138326753a7e46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-4-pilar.md",
+                "file": "catatan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03-4-pilar"
+              "title": "catatan"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,22 +212,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "a3ecb8052c817c42",
+  "active": "50138326753a7e46",
   "lastOpenFiles": [
-    "README.md",
     "03-abstraction.md",
-    "pengantar-oop.md",
     "catatan.md",
+    "latihan/latihan-04.md",
+    "latihan/latihan-03.md",
+    "latihan/latihan-01.md",
+    "latihan/latihan-08.md",
+    "latihan/latihan-06.md",
+    "latihan/latihan-05.md",
+    "latihan/latihan-12.md",
+    "latihan/latihan-07.md",
+    "latihan/latihan-09.md",
+    "latihan/latihan-10.md",
+    "latihan/latihan-11.md",
+    "03-polymorphism.md",
+    "latihan/src/Villain.java",
+    "latihan/src/SuperHero.java",
+    "latihan/src/Orang2.java",
+    "latihan/src/LatihanVillain1.java",
+    "README.md",
+    "03-4-pilar.md",
+    "pengantar-oop.md",
     "01-pendahuluan.md",
     "01-pengantar-oop.md",
     "images/01-pengantar-oop-contoh-1.png",
-    "03-4-pilar.md",
-    "latihan/latihan-01.md",
     "03-encapsulation.md",
     "02-membuat-class.md",
     "images/4-pillars.png",
     "03-inheritance.md",
-    "03-polymorphism.md",
     "05-oop-other-lang.md",
     "06-class-diagram.md"
   ]
