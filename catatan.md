@@ -115,16 +115,25 @@
 ## Pertemuan 9
 
 - Prep Netbeans
+- [Ruang Belajar - Java / GUI](https://github.com/ruang-belajar/java/blob/main/docs/20-gui.md)
+- [Ruang Belajar - Java / GUI Reference](https://github.com/ruang-belajar/java/blob/main/docs/20-gui-referensi.md)
 - Pelajari tutorial berikut:
 	- [Kelas Tersembunyi - Tutorial GUI Java - Mengubah Nilai TextField Dan Jlabel Dengan Tombol](https://www.youtube.com/watch?v=28KrP9615DQ)
 	- [MDN Channel - hitung luas dan keliling persegi panjang menggunakan JFrame Netbeans](https://www.youtube.com/watch?v=2q8Xwh4Cu78)
 - **Tugas:** 
-	- 💼 folder: **Hallo1**
-		- form yang berisi TextBoxt, Label & Button
-		- Ketika Button di klik, maka pada TextBox dan Label muncul tulisan : "Halo"
 	- 💼 folder: **Persegi1**
 		- buat form untuk menghitung luas dan keliling persegi panjang.
 		- Ketika tombol "Hitung" diklik, maka *Luas* dan *Keliling* akan muncul.
+	- 💼 folder: Bio1
+		- buat form menampilkan form pendaftaran dengan detail sebagai berikut:
+			- NIK: `JTextField`
+			- Nama: `JTextField`
+			- Jenis Kelamin: `JComboBox`
+			- Usia: `JSpinner`
+			- Simpan: `JButton`
+		- Ketika klik tombol *Simpan*, maka muncul *message box*:
+			- "Halo Budi, usiamu 30 tahun"
+		- Gunakan `JOptionPane` untuk memunculkan *message box*.
 
 ## Pertemuan 10
 
