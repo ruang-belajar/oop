@@ -116,6 +116,7 @@
 
 - Review **Netbeans**
 - 🟡 Semua project yang dibuat menggunakan Netbeans, simpan di *folder-kerja/GUI*
+- [Ruang Belajar - Java / Cheatsheet](https://github.com/ruang-belajar/java/blob/main/docs/00-cheatsheet-1.md)
 - [Ruang Belajar - Java / GUI](https://github.com/ruang-belajar/java/blob/main/docs/20-gui.md)
 - [Ruang Belajar - Java / GUI Reference](https://github.com/ruang-belajar/java/blob/main/docs/20-gui-referensi.md)
 - Pelajari tutorial berikut:
