@@ -126,28 +126,21 @@
 	- Folder: **Persegi1**
 		- buat form untuk menghitung luas dan keliling persegi panjang.
 		- Ketika tombol "Hitung" diklik, maka *Luas* dan *Keliling* akan muncul.
-	- Folder: **Pos1**
+	- Tambahkan element *tinggi* menggunakan JSpinner, luas menjadi perhitungan *volume*.
+	- Tambahkan combo box (cm/m/km). Tambahkan *satuan* pada luas (contoh: *30 cm kubik*)
+- **Tugas:**
+	- 💼 Folder: **Pos1**
 		- buat form input barang yang terdiri dari:
-			- *Nama Barang*: JComboBox
-			- *Harga*: JLabel
-			- *Qty*: JTextBox
-			- *Hitung*: JButton
+			- *Nama Barang*: `JComboBox`
+			- *Harga*: `JLabel`
+			- *Qty*: `JTextField`
+			- *Hitung*: `JButton`
 		- Ketika barang dipilih, maka label *Harga* akan memunculkan harga barang.
 		- Harga barang:
 			- Pensil: Rp. 6.000
 			- Penggaris: Rp.7.000
 			- Ballpoint: Rp. 13.000
 		- Ketika tombol *Hitung* diklik, maka muncul nilai total (*harga* x *qty*) berupa *message box*.
-- **Tugas:**
-	- 💼 folder: **Bio1**
-		- buat form menampilkan form pendaftaran dengan detail sebagai berikut:
-			- NIK: `JTextField`
-			- Nama: `JTextField`
-			- Jenis Kelamin: `JComboBox`
-			- Usia: `JSpinner`
-			- Simpan: `JButton`
-		- Ketika klik tombol *Simpan*, maka muncul *message box*:
-			- "Halo Budi, usiamu 30 tahun"
 		- Gunakan `JOptionPane` untuk memunculkan *message box*.
 
 ## Pertemuan 10
