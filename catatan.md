@@ -114,17 +114,31 @@
 
 ## Pertemuan 9
 
-- Prep Netbeans
+- Review **Netbeans**
+- 🟡 Semua project yang dibuat menggunakan Netbeans, simpan di *folder-kerja/GUI*
 - [Ruang Belajar - Java / GUI](https://github.com/ruang-belajar/java/blob/main/docs/20-gui.md)
 - [Ruang Belajar - Java / GUI Reference](https://github.com/ruang-belajar/java/blob/main/docs/20-gui-referensi.md)
 - Pelajari tutorial berikut:
 	- [Kelas Tersembunyi - Tutorial GUI Java - Mengubah Nilai TextField Dan Jlabel Dengan Tombol](https://www.youtube.com/watch?v=28KrP9615DQ)
 	- [MDN Channel - hitung luas dan keliling persegi panjang menggunakan JFrame Netbeans](https://www.youtube.com/watch?v=2q8Xwh4Cu78)
-- **Tugas:** 
-	- 💼 folder: **Persegi1**
+- Latihan: 
+	- Folder: **Persegi1**
 		- buat form untuk menghitung luas dan keliling persegi panjang.
 		- Ketika tombol "Hitung" diklik, maka *Luas* dan *Keliling* akan muncul.
-	- 💼 folder: Bio1
+	- Folder: **Pos1**
+		- buat form input barang yang terdiri dari:
+			- *Nama Barang*: JComboBox
+			- *Harga*: JLabel
+			- *Qty*: JTextBox
+			- *Hitung*: JButton
+		- Ketika barang dipilih, maka label *Harga* akan memunculkan harga barang.
+		- Harga barang:
+			- Pensil: Rp. 6.000
+			- Penggaris: Rp.7.000
+			- Ballpoint: Rp. 13.000
+		- Ketika tombol *Hitung* diklik, maka muncul nilai total (*harga* x *qty*) berupa *message box*.
+- **Tugas:**
+	- 💼 folder: **Bio1**
 		- buat form menampilkan form pendaftaran dengan detail sebagai berikut:
 			- NIK: `JTextField`
 			- Nama: `JTextField`
@@ -137,6 +151,10 @@
 
 ## Pertemuan 10
 
-- Prep database
+- Prep database `kampus`.
+	- `nik`: VARCHAR(20) PRIMARY
+	- `nama`: VARCHAR(50)
+	- `jeniskelamin`: CHAR(1)
+	- `usia`: TINYINT 
 - Koneksi ke database
 - Membuat class `Mahasiswa`
