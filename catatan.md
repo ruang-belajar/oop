@@ -146,9 +146,45 @@
 ## Pertemuan 10
 
 - Prep database `kampus`.
-	- `nik`: VARCHAR(20) PRIMARY
-	- `nama`: VARCHAR(50)
-	- `jeniskelamin`: CHAR(1)
-	- `usia`: TINYINT 
+	- Buat tabel `mahasiswa`
+		- `nik`: VARCHAR(20) PRIMARY
+		- `nama`: VARCHAR(50)
+		- `jeniskelamin`: CHAR(1)
+		- `lahirTahun`: INT
+	- Buat tabel `dosen`
+		- `nip`: VARCHAR(20) PRIMARY
+		- `nama`: VARCHAR(50)
+		- `masukTahun`: INT
 - Koneksi ke database
+	- Download [MySQL JConnector](https://dev.mysql.com/downloads/file/?id=552110)
 - Membuat class `Mahasiswa`
+	```
+	Mahasiswa
+	==========
+	+ nik
+	+ nama
+	+ jenisKelamin
+	+ lahirTahun
+	----------
+	+ getUmur(): int
+	+ insert(): boolean
+	+ update(): boolean
+	+ baca(nik): boolean
+	+ hapus(nik): void <STATIC>
+	+ list(): ArrayList <STATIC>
+	```
+- Membuat class `Dosen`
+```
+Dosen
+============
++ nip
++ nama
++ tahunTahun
+------------
++ getLamaMengajar(): int
++ baca(nik): Dosen
++ update()
++ hapus(nik): void <STATIC>
++ tambah(nik,nama,jenisKelamin,lahirTahun): Dosen <STATIC>
++ list(): ArrayList <STATIC>
+```
