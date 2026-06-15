@@ -155,8 +155,7 @@
 		- `nip`: VARCHAR(20) PRIMARY
 		- `nama`: VARCHAR(50)
 		- `masukTahun`: INT
-- Koneksi ke database
-	- Download [MySQL JConnector](https://dev.mysql.com/downloads/file/?id=552110)
+- [Koneksi ke database](https://github.com/ruang-belajar/java/blob/main/docs/22-koneksi-database.md)
 - Membuat class `Mahasiswa`
 	```
 	Mahasiswa
