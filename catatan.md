@@ -145,6 +145,7 @@
 
 ## Pertemuan 10
 
+- Review Tugas
 - Prep database `kampus`.
 	- Buat tabel `mahasiswa`
 		- `nik`: VARCHAR(20) PRIMARY
@@ -169,7 +170,7 @@
 	+ insert(): boolean
 	+ update(): boolean
 	+ baca(nik): boolean
-	+ hapus(nik): void <STATIC>
+	+ hapus(nik): boolean <STATIC>
 	+ list(): ArrayList <STATIC>
 	```
 - Membuat class `Dosen`
@@ -182,8 +183,8 @@ Dosen
 ------------
 + getLamaMengajar(): int
 + baca(nik): Dosen
-+ update()
-+ hapus(nik): void <STATIC>
++ update(): boolean
++ hapus(nik): boolean <STATIC>
 + tambah(nik,nama,jenisKelamin,lahirTahun): Dosen <STATIC>
 + list(): ArrayList <STATIC>
 ```
