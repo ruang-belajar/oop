@@ -157,6 +157,16 @@
 		- `nama`: VARCHAR(50)
 		- `masukTahun`: INT
 - [Koneksi ke database](https://github.com/ruang-belajar/java/blob/main/docs/22-koneksi-database.md)
+- Buat 💼 `FormMahasiswa1`
+	- Buat Text Field *NIM* & *Nama*
+	- Buat tombol **CARI**, **UPDATE**, **INSERT**
+- **Tugas:**
+	- Tambahkan text field *Tahun Lahir*
+	- Tambahkan combo box *Jenis Kelamin*
+	- Tambahkan tombol **DELETE**.
+
+## Pertemuan 11
+
 - Membuat class `Mahasiswa`
 	```
 	Mahasiswa
@@ -173,18 +183,3 @@
 	+ hapus(nik): boolean <STATIC>
 	+ list(): ArrayList <STATIC>
 	```
-- Membuat class `Dosen`
-```
-Dosen
-============
-+ nip
-+ nama
-+ tahunTahun
-------------
-+ getLamaMengajar(): int
-+ baca(nik): Dosen
-+ update(): boolean
-+ hapus(nik): boolean <STATIC>
-+ tambah(nik,nama,jenisKelamin,lahirTahun): Dosen <STATIC>
-+ list(): ArrayList <STATIC>
-```
