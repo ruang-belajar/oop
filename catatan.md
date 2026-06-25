@@ -157,7 +157,7 @@
 		- `nama`: VARCHAR(50)
 		- `masukTahun`: INT
 - [Koneksi ke database](https://github.com/ruang-belajar/java/blob/main/docs/22-koneksi-database.md)
-- Buat 💼 `FormMahasiswa1`
+- Buat 💼 `ProjectLatihan1` : `FormMahasiswa1`
 	- Buat Text Field *NIM* & *Nama*
 	- Buat tombol **CARI**, **UPDATE**, **INSERT**
 - **Tugas:**
@@ -167,6 +167,7 @@
 
 ## Pertemuan 11
 
+- Review tugas
 - Membuat class `Mahasiswa`
 	```
 	Mahasiswa
@@ -183,3 +184,8 @@
 	+ hapus(nik): boolean <STATIC>
 	+ list(): ArrayList <STATIC>
 	```
+- [Membuat fungsi *static*](https://github.com/ruang-belajar/java/blob/main/docs/12-static.md)
+- Buat 💼 `ProjectLatihan1` : `FormMahasiswa2` 
+- Buat proses yang sama dengan FormMahasiswa1, proses *INSERT, DELETE, UPDATE, SELECT*. Gunakan method yang disediakan class `Mahasiswa`.
+- Membuat method `getUmur()`:
+	- Google Search: [java get current year](https://www.google.com/search?q=java+get+current+year).
