@@ -157,7 +157,7 @@
 		- `nama`: VARCHAR(50)
 		- `masukTahun`: INT
 - [Koneksi ke database](https://github.com/ruang-belajar/java/blob/main/docs/22-koneksi-database.md)
-- Buat 💼 `ProjectLatihan1` : `FormMahasiswa1`
+- Buat `FormMahasiswa1`
 	- Buat Text Field *NIM* & *Nama*
 	- Buat tombol **CARI**, **UPDATE**, **INSERT**
 - **Tugas:**
@@ -181,7 +181,8 @@
 	+ insert(): boolean
 	+ update(): boolean
 	+ baca(nik): boolean
-	+ hapus(nik): boolean <STATIC>
+	+ load(nik): TMahasiswa <STATIC>
+	+ hapus(nik): void <STATIC>
 	+ list(): ArrayList <STATIC>
 	```
 - [Membuat fungsi *static*](https://github.com/ruang-belajar/java/blob/main/docs/12-static.md)
