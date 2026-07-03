@@ -162,8 +162,11 @@
 	- Buat tombol **CARI**, **UPDATE**, **INSERT**
 - **Tugas:**
 	- Tambahkan text field *Tahun Lahir*
+		- text: *[kosong]*
 	- Tambahkan combo box *Jenis Kelamin*
+		- model: *L, P*
 	- Tambahkan tombol **DELETE**.
+		- text: *Hapus*
 
 ## Pertemuan 11
 
@@ -190,3 +193,13 @@
 - Buat proses yang sama dengan FormMahasiswa1, proses *INSERT, DELETE, UPDATE, SELECT*. Gunakan method yang disediakan class `Mahasiswa`.
 - Membuat method `getUmur()`:
 	- Google Search: [java get current year](https://www.google.com/search?q=java+get+current+year).
+
+## Pertemuan 12
+
+- Review
+	- Lengkapi class `Mahasiswa` sesuai class diagram (`getUmur()`, `insert()`, `update()`, `baca()`, `hapus()`, `load()`)
+- Buat `list()`
+- Buat `FormListMahasiswa`
+	- Tambahkan `daftar` : `JTable`
+	- Tambahkan `tombolSelesai` : `JButton`
+		- text: *Selesai*
