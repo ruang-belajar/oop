@@ -198,8 +198,94 @@
 
 - Review
 	- Lengkapi class `Mahasiswa` sesuai class diagram (`getUmur()`, `insert()`, `update()`, `baca()`, `hapus()`, `load()`)
-- Buat `list()`
-- Buat `FormListMahasiswa`
-	- Tambahkan `daftar` : `JTable`
-	- Tambahkan `tombolSelesai` : `JButton`
-		- text: *Selesai*
+- Buat `list()` class `Mahasiswa`
+	```java
+	public static ArrayList<String[]> list() {
+        Connection connection = null;
+        
+        // siapkan array yang akan menampung hasil
+        ArrayList<String[]> hasil = new ArrayList<>();
+        
+        try {
+            // buat koneksi ke server mysql.
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/kampus", "root", "");
+
+            // siapkan objek statement untuk query
+            Statement statement;
+            statement = connection.createStatement();
+            ResultSet resultSet;
+
+            // eksekusi query
+            resultSet = statement.executeQuery("select * from mahasiswa");
+
+            // baca dan tampilkan data dari query
+            while(resultSet.next()) {
+                hasil.add(new String[]{
+                    resultSet.getString("nik"),
+                    resultSet.getString("nama")
+                });
+            } 
+            // hapus objek dan koneksi
+            resultSet.close();
+            statement.close();
+            connection.close();
+            return hasil;
+        }
+        catch (Exception exception) {
+            // tampilkan pesan error (jika terjadi kesalahJan)
+            return null;
+        }
+    }
+	```
+- Buat `FormDaftarMahasiswa`
+	- Tambahkan `daftarMahasiswa` : `JTable`
+	- Tambahkan `tombolLoad` : `JButton`
+		- text: *Load*
+		- actionPerformed
+			```java
+			DefaultTableModel model = (DefaultTableModel) daftarMahasiswa.getModel();
+
+	        ArrayList<String[]> dataList = Mahasiswa.list();
+	        for (String[] row : dataList) {
+	            model.addRow(row);
+	        }
+			```
+
+## Pertemuan 13
+
+- Modifikasi `FormDaftarMahasiswa`
+	- Tambah `tombolDetail`: `JButton`
+		- actionPerformed: buka FormMahasiswa2 dan tampilakn data sesuai data yang dipilih pada `daftarMahasiswa`.
+- Java dalam bahasa pemrograman lain: C++, JavaScript, PHP, Python, Rust, C
+	- Kode program
+		```java
+		abstract class BangunDatar {
+		    String warna;
+		
+		    public BangunDatar(String warna) {
+		        this.warna = warna;
+		    }
+		
+		    abstract double hitungLuas();
+
+		    public void info() {
+		        System.out.println("Bangun datar ini berwarna " + warna);
+		    }
+		}
+		
+		class Lingkaran extends BangunDatar {
+		    double jariJari;
+		
+		    public Lingkaran(String warna, double jariJari) {
+		        super(warna); 
+		        this.jariJari = jariJari;
+		    }
+		
+		    @Override
+		    double hitungLuas() {
+		        return Math.PI * jariJari * jariJari;
+		    }
+		}
+		```
