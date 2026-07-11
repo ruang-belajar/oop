@@ -313,7 +313,7 @@
 	- Buat 💼 `FormBuku`
 	- Tambahkan text field untuk kode, judul, pengarang, tahun beli dan harga beli.
 	- Tambahkan tombol *Cari, Update, Tambah* dan *Hapus*. Tambahkan kode program sesuai fungsinya
-	- Di `FormUtama`, tambahkan menu *Utility - Buku*, tambahkan kode untuk membuka `FormBuku` pada menu tersebut
+	- 🟦 Di kirim atas form, buat berisi nama Anda.
 - Java dalam bahasa pemrograman lain: *C++, JavaScript, PHP, Python, Rust, VBA, C*.
 	- Kode program
 		```java
