@@ -257,8 +257,10 @@
 
 - Modifikasi `FormDaftarMahasiswa`
 	- Tambah `tombolDetail`: `JButton`
-		- actionPerformed: buka FormMahasiswa2 dan tampilakn data sesuai data yang dipilih pada `daftarMahasiswa`.
-- Java dalam bahasa pemrograman lain: C++, JavaScript, PHP, Python, Rust, C
+		- actionPerformed: buka FormMahasiswa2 dan tampilkan data sesuai data yang dipilih pada `daftarMahasiswa`.
+- Tugas & kehadiran pertemuan 14
+	- 
+- Java dalam bahasa pemrograman lain: *C++, JavaScript, PHP, Python, Rust, VBA, C*.
 	- Kode program
 		```java
 		abstract class BangunDatar {
@@ -289,3 +291,4 @@
 		    }
 		}
 		```
+	
