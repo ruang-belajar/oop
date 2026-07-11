@@ -314,6 +314,7 @@
 	- Tambahkan text field untuk kode, judul, pengarang, tahun beli dan harga beli.
 	- Tambahkan tombol *Cari, Update, Tambah* dan *Hapus*. Tambahkan kode program sesuai fungsinya
 	- 🟦 Di kirim atas form, buat berisi nama Anda.
+	- **⚠️ Jangan lupa di COMMIT dan PUSH**
 - Java dalam bahasa pemrograman lain: *C++, JavaScript, PHP, Python, Rust, VBA, C*.
 	- Kode program
 		```java
