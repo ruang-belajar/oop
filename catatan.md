@@ -285,14 +285,14 @@
 - Modifikasi `FormDaftarMahasiswa`
 	- Tambah `tombolHapus`: `JButton`
 		- actionPerformed: hapus entry yang dipilih
-- Tugas & kehadiran pertemuan 14
+- **Tugas & kehadiran pertemuan 14**
 	- Buat tabel `buku` dengan detail sebagai berikut:
 		- kode VARCHAR(20)
 		- judul VARCHAR(50)
 		- pengarang VARCHAR(50)
 		- tahunBeli INT
 		- hargaBeli INT
-	- Buat class `Buku` mengikuti class -diagram berikut:
+	- Buat class `Buku` mengikuti *class diagram* berikut:
 		```
 		=======================
 		Buku
@@ -310,9 +310,9 @@
 		=======================
 		```
 
-	- Buat `FormBuku`
+	- Buat 💼 `FormBuku`
 	- Tambahkan text field untuk kode, judul, pengarang, tahun beli dan harga beli.
-	- Tambahkan tombol Cari, Update, Tambah dan Hapus. Tambahkan kode program sesuai fungsinya
+	- Tambahkan tombol *Cari, Update, Tambah* dan *Hapus*. Tambahkan kode program sesuai fungsinya
 	- Di `FormUtama`, tambahkan menu *Utility - Buku*, tambahkan kode untuk membuka `FormBuku` pada menu tersebut
 - Java dalam bahasa pemrograman lain: *C++, JavaScript, PHP, Python, Rust, VBA, C*.
 	- Kode program
