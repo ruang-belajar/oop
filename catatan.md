@@ -157,7 +157,9 @@
 		- `nama`: VARCHAR(50)
 		- `masukTahun`: INT
 - [Koneksi ke database](https://github.com/ruang-belajar/java/blob/main/docs/22-koneksi-database.md)
-- Buat `FormMahasiswa1`
+- Buat project 💼 `Kampus1`
+	- ⚠️ Untuk selanjutnya, setiap form buat dalam project ini.
+- Buat 💼 `FormMahasiswa1`
 	- Buat Text Field *NIM* & *Nama*
 	- Buat tombol **CARI**, **UPDATE**, **INSERT**
 - **Tugas:**
@@ -171,7 +173,7 @@
 ## Pertemuan 11
 
 - Review tugas
-- Membuat class `Mahasiswa`
+- Membuat class 💼 `Mahasiswa`
 	```
 	Mahasiswa
 	==========
@@ -189,7 +191,7 @@
 	+ list(): ArrayList <STATIC>
 	```
 - [Membuat fungsi *static*](https://github.com/ruang-belajar/java/blob/main/docs/12-static.md)
-- Buat 💼 `ProjectLatihan1` : `FormMahasiswa2` 
+- Buat 💼 `FormMahasiswa2` 
 - Buat proses yang sama dengan FormMahasiswa1, proses *INSERT, DELETE, UPDATE, SELECT*. Gunakan method yang disediakan class `Mahasiswa`.
 - Membuat method `getUmur()`:
 	- Google Search: [java get current year](https://www.google.com/search?q=java+get+current+year).
@@ -252,14 +254,66 @@
 	            model.addRow(row);
 	        }
 			```
+	- Tambahkan method `tampilkan()` di class `FormMahasiswa2`
+		```java
+		public void tampilkan(String nik) {
+	        textNim.setText(nik);
+	        tombolCari.doClick();
+	        setVisible(true);
+	    }
+		```
+	- Tambahkan `tombolEdit` : `JButton`
+		```java
+		int viewRow = daftarMahasiswa.getSelectedRow();
+
+		if (viewRow != -1) {
+			// 1. Convert the view index to the model index
+			//    (crucial for sorted/filtered tables)
+			int modelRow = daftarMahasiswa.convertRowIndexToModel(viewRow);
+
+			// 2. Fetch data from a specific column index (e.g., column 0)
+			String nik = (String) daftarMahasiswa.getModel().getValueAt(modelRow, 0);
+			
+			//new FormMahasiswa2().tampilkan(nik);
+			FormMahasiswa2 form = new FormMahasiswa2();
+			form.tampilkan(nik);
+		}
+		```
 
 ## Pertemuan 13
 
 - Modifikasi `FormDaftarMahasiswa`
-	- Tambah `tombolDetail`: `JButton`
-		- actionPerformed: buka FormMahasiswa2 dan tampilkan data sesuai data yang dipilih pada `daftarMahasiswa`.
+	- Tambah `tombolHapus`: `JButton`
+		- actionPerformed: hapus entry yang dipilih
 - Tugas & kehadiran pertemuan 14
-	- 
+	- Buat tabel `buku` dengan detail sebagai berikut:
+		- kode VARCHAR(20)
+		- judul VARCHAR(50)
+		- pengarang VARCHAR(50)
+		- tahunBeli INT
+		- hargaBeli INT
+	- Buat class `Buku` mengikuti class -diagram berikut:
+		```
+		=======================
+		Buku
+		-----------------------
+		+ kode: String
+		+ judul: String
+		+ pengarang: String
+		+ tahunBeli: int
+		+ hargaBeli: int
+		-----------------------
+		+ tambah(): boolean
+		+ update(): boolean
+		+ baca(kode): boolean
+		+ hapus(kode): void <STATIC>
+		=======================
+		```
+
+	- Buat `FormBuku`
+	- Tambahkan text field untuk kode, judul, pengarang, tahun beli dan harga beli.
+	- Tambahkan tombol Cari, Update, Tambah dan Hapus. Tambahkan kode program sesuai fungsinya
+	- Di `FormUtama`, tambahkan menu *Utility - Buku*, tambahkan kode untuk membuka `FormBuku` pada menu tersebut
 - Java dalam bahasa pemrograman lain: *C++, JavaScript, PHP, Python, Rust, VBA, C*.
 	- Kode program
 		```java
